@@ -20,25 +20,20 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="sWQ-rJ-2Pp" customClass="MyTableViewCell" customModule="Table_View_Cell_Test" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sWQ-rJ-2Pp" id="XuJ-AA-hxn" customClass="MyTableViewCell" customModule="Table_View_Cell_Test" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jB3-6E-sNL">
-                                                    <rect key="frame" x="20" y="11" width="374" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jB3-6E-sNL">
+                                                    <rect key="frame" x="76" y="10" width="263" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="jB3-6E-sNL" firstAttribute="leading" secondItem="XuJ-AA-hxn" secondAttribute="leadingMargin" id="cPo-BG-toB"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="jB3-6E-sNL" secondAttribute="trailing" id="kH4-si-JRa"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="jB3-6E-sNL" secondAttribute="bottom" id="s72-Md-pSg"/>
-                                                <constraint firstItem="jB3-6E-sNL" firstAttribute="top" secondItem="XuJ-AA-hxn" secondAttribute="topMargin" id="zIa-lT-Bxb"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="myLabel" destination="jB3-6E-sNL" id="32W-jN-Hxt"/>
