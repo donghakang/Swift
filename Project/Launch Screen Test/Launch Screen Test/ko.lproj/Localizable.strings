@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Launch Screen Test
+
+  Created by Dongha Kang on 2020/09/07.
+  Copyright © 2020 Dongha Kang. All rights reserved.
+*/
+
+// default 영어, Korean 
+"Hello" = "안녕하세요";
