@@ -10,10 +10,10 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var tableArr:[String] = ["A", "B", "C", "D", "E"]
+    var tableArr:[String] = ["Stepper and Switch", "Segment Control", "TextField"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return tableArr.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -25,11 +25,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if (indexPath.row == 0) {
-            let vc = storyboard?.instantiateViewController(identifier: "CameraViewController") as? CameraViewController
+        switch indexPath.row {
+        case 0:
+            let vc = storyboard?.instantiateViewController(identifier: "StepperVC") as? StepperViewController
+            self.navigationController?.pushViewController(vc!, animated: true)
+        case 1:
+            let vc = storyboard?.instantiateViewController(identifier: "SegmentControlVC") as? SegmentControlViewController
+            self.navigationController?.pushViewController(vc!, animated: true)
+        case 2:
+            let vc = storyboard?.instantiateViewController(identifier: "TextFieldVC") as? TextFieldViewController
             self.navigationController?.pushViewController(vc!, animated: true)
             
+//            let vc = storyboard?.instantiateViewController(identifier: "CameraViewController") as? CameraViewController
+//            self.navigationController?.pushViewController(vc!, animated: true)
+        default:
+            break
         }
+        
     }
 
     override func viewDidLoad() {

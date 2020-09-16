@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA62913625110A3600C19C51 /* StepperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62913525110A3600C19C51 /* StepperViewController.swift */; };
+		CA62913C25110F5300C19C51 /* SegmentControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62913B25110F5300C19C51 /* SegmentControlViewController.swift */; };
+		CAB4C26C25112CB70062F020 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4C26B25112CB70062F020 /* TextFieldViewController.swift */; };
 		CACAE035250E09080056F63F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACAE034250E09080056F63F /* AppDelegate.swift */; };
 		CACAE037250E09080056F63F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACAE036250E09080056F63F /* SceneDelegate.swift */; };
 		CACAE039250E09080056F63F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACAE038250E09080056F63F /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA62913525110A3600C19C51 /* StepperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperViewController.swift; sourceTree = "<group>"; };
+		CA62913B25110F5300C19C51 /* SegmentControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControlViewController.swift; sourceTree = "<group>"; };
+		CAB4C26B25112CB70062F020 /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
 		CACAE031250E09080056F63F /* Utility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CACAE034250E09080056F63F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CACAE036250E09080056F63F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA62913925110C7100C19C51 /* control */ = {
+			isa = PBXGroup;
+			children = (
+				CACAE038250E09080056F63F /* ViewController.swift */,
+				CAB4C26B25112CB70062F020 /* TextFieldViewController.swift */,
+				CACAE048250E2C1A0056F63F /* CameraViewController.swift */,
+				CA62913B25110F5300C19C51 /* SegmentControlViewController.swift */,
+				CA62913525110A3600C19C51 /* StepperViewController.swift */,
+			);
+			path = control;
+			sourceTree = "<group>";
+		};
+		CA62913A25110C8600C19C51 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CACAE03A250E09080056F63F /* Main.storyboard */,
+				CACAE03F250E090A0056F63F /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		CACAE028250E09080056F63F = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +85,11 @@
 		CACAE033250E09080056F63F /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				CA62913A25110C8600C19C51 /* view */,
+				CA62913925110C7100C19C51 /* control */,
 				CACAE034250E09080056F63F /* AppDelegate.swift */,
 				CACAE036250E09080056F63F /* SceneDelegate.swift */,
-				CACAE038250E09080056F63F /* ViewController.swift */,
-				CACAE048250E2C1A0056F63F /* CameraViewController.swift */,
-				CACAE03A250E09080056F63F /* Main.storyboard */,
 				CACAE03D250E090A0056F63F /* Assets.xcassets */,
-				CACAE03F250E090A0056F63F /* LaunchScreen.storyboard */,
 				CACAE042250E090A0056F63F /* Info.plist */,
 			);
 			path = Utility;
@@ -141,7 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA62913625110A3600C19C51 /* StepperViewController.swift in Sources */,
 				CACAE039250E09080056F63F /* ViewController.swift in Sources */,
+				CAB4C26C25112CB70062F020 /* TextFieldViewController.swift in Sources */,
+				CA62913C25110F5300C19C51 /* SegmentControlViewController.swift in Sources */,
 				CACAE049250E2C1A0056F63F /* CameraViewController.swift in Sources */,
 				CACAE035250E09080056F63F /* AppDelegate.swift in Sources */,
 				CACAE037250E09080056F63F /* SceneDelegate.swift in Sources */,
