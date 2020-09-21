@@ -28,6 +28,10 @@ class MainViewController: UIViewController {
         btn2.backgroundColor = .green
         btn3.backgroundColor = .blue
         
+        btn1.clipsToBounds = true
+        btn2.clipsToBounds = true
+        btn3.clipsToBounds = true
+        
         btn1.layer.cornerRadius = btn1.bounds.size.width / 2
         btn2.layer.cornerRadius = btn2.bounds.size.width / 2
         btn3.layer.cornerRadius = btn3.bounds.size.width / 2
