@@ -20,7 +20,7 @@ class MainViewController: UIViewController {
         setView()
         setButtonView()
     }
-
+    
 
     // MARK: Visualization
     func setButtonView() {
