@@ -17,9 +17,6 @@ class FirstViewController: UIViewController, UIGestureRecognizerDelegate {
     let scrollView = UIScrollView()
     var imageViews = [UIImageView]()
     
-
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +31,6 @@ class FirstViewController: UIViewController, UIGestureRecognizerDelegate {
         let im4 = UIImageView()
         let im5 = UIImageView()
         let im6 = UIImageView()
-        
         
         
         imageViews = [im1, im2, im3, im4, im5, im6]
