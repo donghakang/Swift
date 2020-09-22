@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="-17.39130434782609" y="-27.455357142857142"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Second Collection Collection View Controller-->
         <scene sceneID="TWn-u2-hNx">
             <objects>
-                <viewController id="epH-ky-uQF" customClass="SecondViewController" customModule="Secret" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="epH-ky-uQF" customClass="SecondCollectionCollectionViewController" customModule="Secret" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SUZ-gr-A7z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

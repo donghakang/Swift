@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1B13A5C9-E7B0-469F-B8CD-B3A128C531FA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0291640E-AC4D-4A55-96E9-3C4B3CC0A552"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Collection View/CollectionViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "CollectionViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "0291640E-AC4D-4A55-96E9-3C4B3CC0A552 - cde6c78d9d93d594"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Collection_View.CollectionViewController.itemsPerRow.getter : CoreGraphics.CGFloat"
+                  moduleName = "Collection View"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/donghakang/Documents/Swift/Project/Collection%20View/Collection%20View/CollectionViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "30">
+               </Location>
+               <Location
+                  uuid = "0291640E-AC4D-4A55-96E9-3C4B3CC0A552 - 14c712dd60e979df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Collection_View.CollectionViewController.init(collectionViewLayout: __C.UICollectionViewLayout) -&gt; Collection_View.CollectionViewController"
+                  moduleName = "Collection View"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/donghakang/Documents/Swift/Project/Collection%20View/Collection%20View/CollectionViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "457">
+               </Location>
+               <Location
+                  uuid = "0291640E-AC4D-4A55-96E9-3C4B3CC0A552 - 2bc3349d403a918"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Collection_View.CollectionViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Collection_View.CollectionViewController"
+                  moduleName = "Collection View"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/donghakang/Documents/Swift/Project/Collection%20View/Collection%20View/CollectionViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "547">
+               </Location>
+               <Location
+                  uuid = "0291640E-AC4D-4A55-96E9-3C4B3CC0A552 - a81beadb53075e00"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Collection_View.CollectionViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Collection_View.CollectionViewController&gt;"
+                  moduleName = "Collection View"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/donghakang/Documents/Swift/Project/Collection%20View/Collection%20View/CollectionViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "497">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

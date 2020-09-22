@@ -1,78 +1,23 @@
 //
-//  FirstViewController.swift
+//  ScrollImageView.swift
 //  Scret
 //
-//  Created by Dongha Kang on 2020/09/19.
+//  Created by Dongha Kang on 2020/09/21.
 //  Copyright © 2020 Dongha Kang. All rights reserved.
 //
 
 import UIKit
 
-class FirstViewController: UIViewController, UIGestureRecognizerDelegate {
-    /*
-     미네소타 삶을 위한 폴더
-     */
+class ScrollImageView : UIViewController {
     
-    
-    let scrollView = UIScrollView()
     var imageViews = [UIImageView]()
-    let letterTitle = UILabel()
+    let scrollView = UIScrollView()
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print("HELLOs")
-        
-        
-        self.view.addSubview(scrollView)
-        
-        let im1 = UIImageView()
-        let im2 = UIImageView()
-        let im3 = UIImageView()
-        let im4 = UIImageView()
-        let im5 = UIImageView()
-        let im6 = UIImageView()
-        
-        imageViews = [im1, im2, im3, im4, im5, im6]
-        for im in imageViews {
-            scrollView.addSubview(im)
-            im.image = UIImage(named:"launch_img")
-            im.contentMode = .scaleAspectFill
-//            im.contentMode = .center
-        }
-        
-        scrollViewLayout()
-        setLayout()
-        
-        animation()
-        
-        // Gesture
-        addGesture()
-        
-    }
-  
-    // MARK: Gesture Recognition
-    func addGesture() {
-        let backSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeHandler(sender:)))
-        backSwipeGesture.direction = .right
-        let downSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeHandler(sender:)))
-        downSwipeGesture.direction = .down
-        self.view.addGestureRecognizer(backSwipeGesture)
-        self.view.addGestureRecognizer(downSwipeGesture)
-        
+    func setImages (images : [UIImageView]) {
+        self.imageViews = images
     }
     
-    @objc func swipeHandler(sender: UISwipeGestureRecognizer) {
-        if sender.state == .ended {
-            if sender.direction == .right {
-                _ = navigationController?.popViewController(animated: true)
-            }
-        }
-    }
-    
-    
-    // MARK: Layout
-    func scrollViewLayout() {
+    func setup() {
         self.scrollView.translatesAutoresizingMaskIntoConstraints = false;
         
         // 스크롤 뷰는 항상 우리가 보는 메인과 동등한 사이즈를 (혹은 스크린에 알맞는 사이즈)를 가지고 있다.
@@ -80,17 +25,13 @@ class FirstViewController: UIViewController, UIGestureRecognizerDelegate {
         self.scrollView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 0).isActive = true;
         self.scrollView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 0).isActive = true;
         self.scrollView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0).isActive = true;
-    }
-    
-    
-    
-    func setLayout() {
-        // 코드로 constraint 설정할때 무조건 넣는다.
+        
+        
         
         for i in 0...imageViews.count-1 {
             imageViews[i].translatesAutoresizingMaskIntoConstraints = false
             imageViews[i].centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-            imageViews[i].heightAnchor.constraint(equalToConstant: self.view.frame.width * 2 / 3).isActive = true // Y 사이즈
+            imageViews[i].heightAnchor.constraint(equalToConstant: self.view.frame.width).isActive = true // Y 사이즈
             imageViews[i].widthAnchor.constraint(equalToConstant: self.view.frame.width).isActive = true  // X 사이즈
             if i == 0 {
                 // 첫번째 사진은 스크롤 뷰 제일 위에 위치한다
@@ -116,20 +57,23 @@ class FirstViewController: UIViewController, UIGestureRecognizerDelegate {
              bgImage2.topAnchor.constraint(equalTo: bgImage1.bottomAnchor)]
          NSLayoutConstraint.activate(constraints2)
          */
-    }
-    
-    
-    // MARK: animation
-    func animation() {
-        for im in imageViews {
-            im.alpha = 0.0
-        }
-        
-        for i in 0...self.imageViews.count-1 {
-            UIView.animateKeyframes(withDuration: 1.0, delay: Double(i)/5.0, options: .calculationModeCubic, animations: {
-                self.imageViews[i].alpha = 1.0
-            }, completion: nil)
-        }
-    }
 
+        
+        let backSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeHandler(sender:)))
+        backSwipeGesture.direction = .right
+        let downSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeHandler(sender:)))
+        downSwipeGesture.direction = .down
+        self.view.addGestureRecognizer(backSwipeGesture)
+        self.view.addGestureRecognizer(downSwipeGesture)
+    }
+    
+    
+    // MARK: Gesture Recognition
+    @objc func swipeHandler(sender: UISwipeGestureRecognizer) {
+        if sender.state == .ended {
+            if sender.direction == .right {
+                _ = navigationController?.popViewController(animated: true)
+            }
+        }
+    }
 }
