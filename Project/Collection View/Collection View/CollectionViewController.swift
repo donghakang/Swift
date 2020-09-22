@@ -13,7 +13,6 @@ class CollectionViewController: UICollectionViewController {
 
 //    let countryNames : [String] = ["USA", "Korea", "China", "Japan", "England", "New Zealand", "Vietnam"]
     
-    let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
     let itemsPerRow: CGFloat = 3
     
     override func viewDidLoad() {
@@ -43,74 +42,86 @@ extension CollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // 아이템 갯수
 //        return Int(itemsPerRow)
-        return 100
+        return 3
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
         
-        if (indexPath.row % 2 == 0) {
-            cell.backgroundColor = .green
-        } else {
-            cell.backgroundColor = .cyan
-        }
+        let randomColor:UIColor = .random
+        cell.backgroundColor = randomColor
+//        cell.backgroundColor = .red
         
         // Configure the cell
         return cell
     }
+    
+    
 }
 
 
 
 extension CollectionViewController : UICollectionViewDelegateFlowLayout {
     
-    
-
-    
-    func collectionView(_ collectionView: UICollectionView,
-                          layout collectionViewLayout: UICollectionViewLayout,
-                          sizeForItemAt indexPath: IndexPath) -> CGSize {
-        //2
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        
-        var newSize: CGSize = CGSize.zero
-        newSize.height = 100;
-
-
-
-        if(indexPath.item % 4 == 0 || indexPath.item % 4 == 3)
-        {
-            // Size : 1/4th of screen
-            newSize.width = view.frame.width * 0.23;
-        }
-        else
-        {
-            // Size : 3/4th of screen
-            newSize.width = view.frame.width * 0.72;
-
-        }
-        return newSize;
-//        return CGSize(width: width, height: height)
-        
-        
-//        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
-//        let availableWidth = view.frame.width - paddingSpace
-//        let widthPerItem = availableWidth / itemsPerRow
-
-//        return CGSize(width: widthPerItem, height: widthPerItem)
+        return CGSize(width: view.frame.width / 3.0, height: view.frame.width / 3.0)
     }
     
-//    //3
-//      func collectionView(_ collectionView: UICollectionView,
-//                          layout collectionViewLayout: UICollectionViewLayout,
-//                          insetForSectionAt section: Int) -> UIEdgeInsets {
-//        return sectionInsets
-//      }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets.zero
+    }
 //
-      // 4
-//      func collectionView(_ collectionView: UICollectionView,
-//                          layout collectionViewLayout: UICollectionViewLayout,
-//                          minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//        return 10
-//      }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        return 0.0
+//    }
+//
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0.0
+    }
 }
+
+
+extension UIColor {
+    static var random: UIColor {
+        return .init(hue: .random(in: 0...1), saturation: 1, brightness: 1, alpha: 1)
+    }
+}
+
+//
+//
+//func collectionView(_ collectionView: UICollectionView,
+//                      layout collectionViewLayout: UICollectionViewLayout,
+//                      sizeForItemAt indexPath: IndexPath) -> CGSize {
+//    var newSize: CGSize = CGSize.zero
+//    newSize.height = 100;
+//
+//
+//
+//    if(indexPath.item % 4 == 0 || indexPath.item % 4 == 3)
+//    {
+//        // Size : 1/4th of screen
+//        newSize.width = view.frame.width * 0.23;
+//    }
+//    else
+//    {
+//        // Size : 3/4th of screen
+//        newSize.width = view.frame.width * 0.72;
+//
+//    }
+//    return newSize;
+//}
+//
+////3
+//  func collectionView(_ collectionView: UICollectionView,
+//                      layout collectionViewLayout: UICollectionViewLayout,
+//                      insetForSectionAt section: Int) -> UIEdgeInsets {
+//    return UIEdgeInsets.zero
+//  }
+//
+//  // 4
+////      func collectionView(_ collectionView: UICollectionView,
+////                          layout collectionViewLayout: UICollectionViewLayout,
+////                          minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+////        return 10
+////      }
