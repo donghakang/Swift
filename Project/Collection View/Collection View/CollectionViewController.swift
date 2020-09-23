@@ -29,13 +29,12 @@ class CollectionViewController: UICollectionViewController {
 }
 
 
-
 extension CollectionViewController {
     
     // MARK: UICollectionViewDataSource
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // 아이템 섹션 갯수
-        return 100
+        return 1
     }
 
 
@@ -43,6 +42,7 @@ extension CollectionViewController {
         // 아이템 갯수
 //        return Int(itemsPerRow)
         return 3
+        
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -51,6 +51,7 @@ extension CollectionViewController {
         let randomColor:UIColor = .random
         cell.backgroundColor = randomColor
 //        cell.backgroundColor = .red
+        
         
         // Configure the cell
         return cell
@@ -63,19 +64,32 @@ extension CollectionViewController {
 
 extension CollectionViewController : UICollectionViewDelegateFlowLayout {
     
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: view.frame.width / 3.0, height: view.frame.width / 3.0)
+        if(indexPath.item == 0) {
+            return CGSize(width: view.frame.width * 2 / 3.0, height: view.frame.width * 2 / 3.0)
+        } else {
+            return CGSize(width: view.frame.width / 3.0 , height: view.frame.width / 3.0)
+        }
+        
+        
     }
     
+
+    
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        
         return UIEdgeInsets.zero
+
     }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//        return 0.0
-//    }
-//
+    
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0.0
+    }
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0.0
     }
