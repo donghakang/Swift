@@ -42,7 +42,7 @@ class MosaicLayout: UICollectionViewLayout {
         let cvWidth = collectionView.bounds.size.width
         
         while currentIndex < count {
-            let segmentFrame = CGRect(x: 0, y: lastFrame.maxY, width: cvWidth, height: cvWidth)
+            var segmentFrame = CGRect(x: 0, y: lastFrame.maxY, width: cvWidth, height: cvWidth)
             
             var segmentRects = [CGRect]()
             switch segment {
@@ -50,15 +50,18 @@ class MosaicLayout: UICollectionViewLayout {
                 segmentRects = [segmentFrame]
                 
             case .fiftyFifty:
-                let horizontalSlices = segmentFrame.dividedIntegral(fraction: 0.5, from: .minXEdge)
-                segmentRects = [horizontalSlices.first, horizontalSlices.second]
+                segmentFrame = CGRect(x: 0, y: lastFrame.maxY, width: cvWidth, height: cvWidth / 3)
+                let horizontalSlices = segmentFrame.dividedThreeEqually(from: .minXEdge)
+                segmentRects = [horizontalSlices.first, horizontalSlices.second, horizontalSlices.third]
     
             case .twoThirdsOneThird:
+                segmentFrame = CGRect(x: 0, y: lastFrame.maxY, width: cvWidth, height: cvWidth * 2 / 3)
                 let horizontalSlices = segmentFrame.dividedIntegral(fraction: (2.0 / 3.0), from: .minXEdge)
                 let verticalSlices = horizontalSlices.second.dividedIntegral(fraction: 0.5, from: .minYEdge)
                 segmentRects = [horizontalSlices.first, verticalSlices.first, verticalSlices.second]
                 
             case .oneThirdTwoThirds:
+                segmentFrame = CGRect(x: 0, y: lastFrame.maxY, width: cvWidth, height: cvWidth * 2 / 3)
                 let horizontalSlices = segmentFrame.dividedIntegral(fraction: (1.0 / 3.0), from: .minXEdge)
                 let verticalSlices = horizontalSlices.first.dividedIntegral(fraction: 0.5, from: .minYEdge)
                 segmentRects = [verticalSlices.first, verticalSlices.second, horizontalSlices.second]
@@ -184,6 +187,34 @@ extension CGRect {
         
         return (first: slices.slice, second: slices.remainder)
     }
+    
+    func dividedThreeEqually(from fromEdge: CGRectEdge) -> (first: CGRect, second: CGRect, third: CGRect) {
+        let dimension: CGFloat
+            
+        dimension = self.size.width
+          
+        let distance = (dimension / 3.0).rounded(.up)
+        let slices = self.divided(atDistance: distance, from: fromEdge)
+        
+        let firstSlice = slices.slice
+        let remainderSlice = slices.remainder
+        
+        let newSlices = remainderSlice.divided(atDistance: distance, from: fromEdge)
+        
+        return (first: firstSlice, second: newSlices.slice, third: newSlices.remainder)
+//        /// - Edge Checking
+//        switch fromEdge {
+//        case .minXEdge, .maxXEdge:
+//            slices.remainder.origin.x += 1
+//            slices.remainder.size.width -= 1
+//        case .minYEdge, .maxYEdge:
+//            slices.remainder.origin.y += 1
+//            slices.remainder.size.height -= 1
+//        }
+        
+
+    }
+    
 }
 
 extension UIColor {
