@@ -35,7 +35,7 @@ class ThirdViewController: UIViewController {
         
         for im in imageViews {
             scrollView.addSubview(im)
-            im.image = UIImage(named:"img2")
+            im.image = UIImage(named:"BA/0")
         }
         
         scrollViewLayout()

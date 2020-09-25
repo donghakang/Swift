@@ -36,6 +36,10 @@ class ViewController: UICollectionViewController {
             collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: false)
         }
     }
+    
+    
+    
+   
 
     // MARK: UICollectionViewDataSource
 
@@ -52,6 +56,20 @@ class ViewController: UICollectionViewController {
         
         
         cell.imageView.image = UIImage(named: "launch_img")
+        
+        switch indexPath.item % 4 {
+        case 0:
+            cell.backgroundColor = .red
+        case 1:
+            cell.backgroundColor = .yellow
+        case 2:
+            cell.backgroundColor = .green
+        case 3:
+            cell.backgroundColor = .blue
+        default:
+            cell.backgroundColor = .black
+        }
+        
         
         return cell
     }
