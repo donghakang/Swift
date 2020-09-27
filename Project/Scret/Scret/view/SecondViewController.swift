@@ -14,7 +14,9 @@ class SecondViewController: UICollectionViewController {
     var assets = [PHAsset]()
     var imageArray = [UIImage]()
     
-   
+    
+    @IBOutlet var imageCollectionView: UICollectionView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,15 +62,18 @@ class SecondViewController: UICollectionViewController {
     func setupCollectionView() {
         // Setup the mosaic collection view.
         let mosaicLayout = MosaicLayout()
-        collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: mosaicLayout)
-        collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        collectionView.alwaysBounceVertical = true
-        collectionView.indicatorStyle = .white
-        collectionView.delegate = self
-        collectionView.dataSource = self
-        collectionView.register(MosaicCell.self, forCellWithReuseIdentifier: MosaicCell.identifer)
+        
+        imageCollectionView.frame = self.view.bounds
+        imageCollectionView.collectionViewLayout = mosaicLayout
+//        collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: mosaicLayout)
+        imageCollectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        imageCollectionView.alwaysBounceVertical = true
+        imageCollectionView.indicatorStyle = .white
+        imageCollectionView.delegate = self
+        imageCollectionView.dataSource = self
+        imageCollectionView.register(MosaicCell.self, forCellWithReuseIdentifier: MosaicCell.identifer)
 
-        self.view.addSubview(collectionView)
+        self.view.addSubview(imageCollectionView)
         
         imageSetup()
     }
@@ -96,10 +101,9 @@ class SecondViewController: UICollectionViewController {
     
     
     // MARK: UICollectionViewDataSource
-
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // Always show 50K cells so scrolling performance can be tested.
-        print(imageArray.count)
         return imageArray.count
     }
 
@@ -118,13 +122,17 @@ class SecondViewController: UICollectionViewController {
         let letterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "myLetter", for: indexPath) as! LetterView
         
         letterView.backgroundColor = .cyan
+        
+        letterView.gradationImageView.backgroundColor = .systemPink
+        letterView.letterView.backgroundColor = .red
         return letterView
     }
     
     // MARK: Images
     func imageSetup() {
-        for i in 0..<11 {
-            imageArray.append(UIImage(named: "BA/" + String(i))!)
+        print(imageArray.count)
+        for i in 0..<41 {
+            imageArray.append(UIImage(named: "M/" + String(i))!)
         }
     }
     

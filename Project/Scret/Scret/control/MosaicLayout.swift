@@ -3,7 +3,7 @@ import UIKit
 
 enum MosaicSegmentStyle {
     case fullWidth
-    case fiftyFifty
+    case thirds
     case twoThirdsOneThird
     case oneThirdTwoThirds
 }
@@ -35,7 +35,7 @@ class MosaicLayout: UICollectionViewLayout {
         
         let cvWidth = collectionView.bounds.size.width
         
-        while currentIndex < count {
+        while currentIndex < count + 1 {
             var segmentFrame = CGRect(x: 0, y: lastFrame.maxY, width: cvWidth, height: cvWidth)
             
             var segmentRects = [CGRect]()
@@ -43,7 +43,7 @@ class MosaicLayout: UICollectionViewLayout {
             case .fullWidth:
                 segmentRects = [segmentFrame]
                 
-            case .fiftyFifty:
+            case .thirds:
                 segmentFrame = CGRect(x: 0, y: lastFrame.maxY, width: cvWidth, height: cvWidth / 3)
                 let horizontalSlices = segmentFrame.dividedThreeEqually(from: .minXEdge)
                 segmentRects = [horizontalSlices.first, horizontalSlices.second, horizontalSlices.third]
@@ -74,25 +74,26 @@ class MosaicLayout: UICollectionViewLayout {
             }
 
             // Determine the next segment style.
-            switch count - currentIndex {
-            case 1:
-                segment = .fullWidth
-            case 2:
-                segment = .fiftyFifty
-            default:
-                switch segment {
-                case .fullWidth:
-                    segment = .fiftyFifty
-                case .fiftyFifty:
-                    segment = .twoThirdsOneThird
-                case .twoThirdsOneThird:
-                    segment = .oneThirdTwoThirds
-                case .oneThirdTwoThirds:
-                    segment = .fiftyFifty
-                }
-            }
+        
+             switch count - currentIndex {
+             case 1:
+                 segment = .fullWidth
+             default:
+                 switch segment {
+                 case .fullWidth:
+                     segment = .thirds
+                 case .thirds:
+                     segment = .twoThirdsOneThird
+                 case .twoThirdsOneThird:
+                     segment = .oneThirdTwoThirds
+                 case .oneThirdTwoThirds:
+                     segment = .thirds
+                 }
+             }
         }
+        
     }
+    
 
     /// - Tag: CollectionViewContentSize
     override var collectionViewContentSize: CGSize {

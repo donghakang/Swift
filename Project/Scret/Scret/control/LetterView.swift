@@ -9,6 +9,10 @@
 import UIKit
 
 class LetterView: UICollectionReusableView {
-
+    
+    @IBOutlet weak var gradationImageView: UIImageView!
+    @IBOutlet weak var letterView: UITextView!
+    
+    
     
 }
