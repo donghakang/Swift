@@ -19,6 +19,7 @@
 		CA299ED42515FA4500FF1373 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA299ED32515FA4500FF1373 /* FirstViewController.swift */; };
 		CA36DCCD251DD7E5008A9F5E /* MosaicLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36DCCC251DD7E5008A9F5E /* MosaicLayout.swift */; };
 		CA36DCD0251DD7F4008A9F5E /* MosaicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36DCCF251DD7F4008A9F5E /* MosaicCell.swift */; };
+		CA57424C25208D3E00E87AD6 /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA57424B25208D3E00E87AD6 /* LetterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		CA299ED32515FA4500FF1373 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		CA36DCCC251DD7E5008A9F5E /* MosaicLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicLayout.swift; sourceTree = "<group>"; };
 		CA36DCCF251DD7F4008A9F5E /* MosaicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicCell.swift; sourceTree = "<group>"; };
+		CA57424B25208D3E00E87AD6 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				CA36DCCC251DD7E5008A9F5E /* MosaicLayout.swift */,
 				CA36DCCF251DD7F4008A9F5E /* MosaicCell.swift */,
+				CA57424B25208D3E00E87AD6 /* LetterView.swift */,
 			);
 			path = control;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA299ED22515F75F00FF1373 /* MainViewController.swift in Sources */,
+				CA57424C25208D3E00E87AD6 /* LetterView.swift in Sources */,
 				CA299EBC2515D77200FF1373 /* AppDelegate.swift in Sources */,
 				CA299EBE2515D77200FF1373 /* SceneDelegate.swift in Sources */,
 				CA1F9D0A25172FB4000F9670 /* SecondViewController.swift in Sources */,
