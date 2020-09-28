@@ -1,16 +1,15 @@
 //
-//  LetterView.swift
+//  LetterCollectionReusableView.swift
 //  Scret
 //
-//  Created by Dongha Kang on 2020/09/27.
+//  Created by Dongha Kang on 2020/09/28.
 //  Copyright © 2020 Dongha Kang. All rights reserved.
 //
 
 import UIKit
 
-class LetterView: UICollectionReusableView {
-    
-    static let identifier = "LetterView"
+class LetterCollectionReusableView: UICollectionReusableView {
+    static let identifier = "LetterCollectionReusableView"
     
     private let label: UILabel = {
         let label = UILabel()
@@ -21,13 +20,13 @@ class LetterView: UICollectionReusableView {
     }()
     
     public func configure() {
-        backgroundColor = .systemPink
+        backgroundColor = .red
         addSubview(label)
+    
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         label.frame = bounds
     }
-    
 }

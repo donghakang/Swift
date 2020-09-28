@@ -8,7 +8,7 @@ Collection view cell subclass representing a single image.
 import UIKit
 
 class MosaicCell: UICollectionViewCell {
-    static let identifer = "kMosaicCollectionViewCell"
+    static let identifer = "MosaicCollectionViewCell"
 
     var imageView = UIImageView()
     var assetIdentifier: String?

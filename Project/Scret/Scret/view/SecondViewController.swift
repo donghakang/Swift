@@ -9,29 +9,30 @@
 import UIKit
 import Photos
 
-class SecondViewController: UICollectionViewController {
+class SecondViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
+    
     
     var assets = [PHAsset]()
     var imageArray = [UIImage]()
     
-    
-    @IBOutlet var imageCollectionView: UICollectionView!
-    
+    var collectionView: UICollectionView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        imageSetup()
         setupCollectionView()
         
+    
         addGesture()
     }
 
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        if collectionView.numberOfItems(inSection: 0) > 0 {
-//            collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: false)
-//        }
-//    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if collectionView!.numberOfItems(inSection: 0) > 0 {
+            collectionView!.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: false)
+        }
+    }
 
     
     
@@ -63,35 +64,26 @@ class SecondViewController: UICollectionViewController {
         // Setup the mosaic collection view.
         let mosaicLayout = MosaicLayout()
         
-        imageCollectionView.frame = self.view.bounds
-        imageCollectionView.collectionViewLayout = mosaicLayout
-//        collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: mosaicLayout)
-        imageCollectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        imageCollectionView.alwaysBounceVertical = true
-        imageCollectionView.indicatorStyle = .white
-        imageCollectionView.delegate = self
-        imageCollectionView.dataSource = self
-        imageCollectionView.register(MosaicCell.self, forCellWithReuseIdentifier: MosaicCell.identifer)
+        
+        collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: mosaicLayout)
+        collectionView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        collectionView?.alwaysBounceVertical = true
+        collectionView?.indicatorStyle = .white
+        collectionView?.delegate = self
+        collectionView?.dataSource = self
+        collectionView?.register(MosaicCell.self, forCellWithReuseIdentifier: MosaicCell.identifer)
+        
+        collectionView?.register(LetterCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: LetterCollectionReusableView.identifier)
+        
 
-        self.view.addSubview(imageCollectionView)
+        self.view.addSubview(collectionView!)
         
-        imageSetup()
-    }
-    
-    
-    func setupTextView() {
-        let textview = UITextView()
-        textview.translatesAutoresizingMaskIntoConstraints = false
-        textview.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        textview.heightAnchor.constraint(equalToConstant: self.view.frame.width).isActive = true // Y 사이즈
-        textview.widthAnchor.constraint(equalToConstant: self.view.frame.width).isActive = true  // X 사이즈
-           
-        textview.text = "HELLO WORLD"
-        textview.backgroundColor = .cyan
         
-        self.view.addSubview(textview)
-    }
+    }   
     
+    
+    
+
     
     
     
@@ -102,36 +94,41 @@ class SecondViewController: UICollectionViewController {
     
     // MARK: UICollectionViewDataSource
     
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // Always show 50K cells so scrolling performance can be tested.
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return imageArray.count
     }
-
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MosaicCell.identifer, for: indexPath) as? MosaicCell
-            else { preconditionFailure("Failed to load collection view cell") }
-        
     
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MosaicCell.identifer, for: indexPath) as? MosaicCell
+                    else { preconditionFailure("Failed to load collection view cell") }
+        
+        
         cell.imageView.image = imageArray[indexPath.item]
         
         return cell
     }
     
-    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let letterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "myLetter", for: indexPath) as! LetterView
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: LetterCollectionReusableView.identifier, for: indexPath) as! LetterCollectionReusableView
         
-        letterView.backgroundColor = .cyan
+        header.configure()
         
-        letterView.gradationImageView.backgroundColor = .systemPink
-        letterView.letterView.backgroundColor = .red
-        return letterView
+        return header
     }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: view.frame.size.width, height: 100)
+    }
+
+    
+    
+    
     
     // MARK: Images
     func imageSetup() {
         print(imageArray.count)
-        for i in 0..<41 {
+        for i in 0..<1 {
             imageArray.append(UIImage(named: "M/" + String(i))!)
         }
     }
