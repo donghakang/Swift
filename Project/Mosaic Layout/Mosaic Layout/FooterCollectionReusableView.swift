@@ -1,28 +1,25 @@
 //
-//  LetterCollectionReusableView.swift
-//  Scret
+//  FooterCollectionReusableView.swift
+//  Mosaic Layout
 //
 //  Created by Dongha Kang on 2020/09/28.
-//  Copyright © 2020 Dongha Kang. All rights reserved.
 //
 
 import UIKit
 
-class LetterCollectionReusableView: UICollectionReusableView {
-    static let identifier = "LetterCollectionReusableView"
+class FooterCollectionReusableView: UICollectionReusableView {
+    static let identifier = "FooterCollectionReusableView"
     
     private let label: UILabel = {
         let label = UILabel()
-        label.text = "header"
+        label.text = "footer"
         label.textAlignment = .center
-        
         return label
     }()
     
     public func configure() {
-        backgroundColor = .systemPink
+        backgroundColor = .green
         addSubview(label)
-    
     }
     
     override func layoutSubviews() {

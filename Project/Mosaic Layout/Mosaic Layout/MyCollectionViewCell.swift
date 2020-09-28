@@ -1,9 +1,8 @@
 //
 //  MyCollectionViewCell.swift
-//  Scret
+//  Mosaic Layout
 //
 //  Created by Dongha Kang on 2020/09/28.
-//  Copyright © 2020 Dongha Kang. All rights reserved.
 //
 
 import UIKit
@@ -21,6 +20,5 @@ class MyCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         backgroundColor = .red
     }
-
 
 }

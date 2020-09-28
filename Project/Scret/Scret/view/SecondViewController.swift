@@ -9,30 +9,27 @@
 import UIKit
 import Photos
 
-class SecondViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
-    
+class SecondViewController: UICollectionViewController {
     
     var assets = [PHAsset]()
     var imageArray = [UIImage]()
     
-    var collectionView: UICollectionView?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imageSetup()
         setupCollectionView()
         
-    
         addGesture()
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        if collectionView!.numberOfItems(inSection: 0) > 0 {
-            collectionView!.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: false)
-        }
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        if collectionView.numberOfItems(inSection: 0) > 0 {
+//            collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: false)
+//        }
+//    }
 
     
     
@@ -64,26 +61,35 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
         // Setup the mosaic collection view.
         let mosaicLayout = MosaicLayout()
         
-        
-        collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: mosaicLayout)
-        collectionView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        collectionView?.alwaysBounceVertical = true
-        collectionView?.indicatorStyle = .white
-        collectionView?.delegate = self
-        collectionView?.dataSource = self
-        collectionView?.register(MosaicCell.self, forCellWithReuseIdentifier: MosaicCell.identifer)
-        
-        collectionView?.register(LetterCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: LetterCollectionReusableView.identifier)
-        
+        collectionView.frame = self.view.bounds
+        collectionView.collectionViewLayout = mosaicLayout
+//        collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: mosaicLayout)
+        collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        collectionView.alwaysBounceVertical = true
+        collectionView.indicatorStyle = .white
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(MosaicCell.self, forCellWithReuseIdentifier: MosaicCell.identifer)
 
-        self.view.addSubview(collectionView!)
+        self.view.addSubview(collectionView)
         
+        imageSetup()
+    }
+    
+    
+    func setupTextView() {
+        let textview = UITextView()
+        textview.translatesAutoresizingMaskIntoConstraints = false
+        textview.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        textview.heightAnchor.constraint(equalToConstant: self.view.frame.width).isActive = true // Y 사이즈
+        textview.widthAnchor.constraint(equalToConstant: self.view.frame.width).isActive = true  // X 사이즈
+           
+        textview.text = "HELLO WORLD"
+        textview.backgroundColor = .cyan
         
-    }   
+        self.view.addSubview(textview)
+    }
     
-    
-    
-
     
     
     
@@ -94,41 +100,33 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
     
     // MARK: UICollectionViewDataSource
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imageArray.count
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        // Always show 50K cells so scrolling performance can be tested.
+        return imageArray.count + 1
     }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MosaicCell.identifer, for: indexPath) as? MosaicCell
-                    else { preconditionFailure("Failed to load collection view cell") }
+            else { preconditionFailure("Failed to load collection view cell") }
         
+    
+        if (indexPath.item < imageArray.count) {
+            cell.imageView.image = imageArray[indexPath.item]
+        } else {
+            cell.backgroundColor = .red
+        }
         
-        cell.imageView.image = imageArray[indexPath.item]
         
         return cell
     }
-    
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: LetterCollectionReusableView.identifier, for: indexPath) as! LetterCollectionReusableView
-        
-        header.configure()
-        
-        return header
-    }
-    
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: view.frame.size.width, height: 100)
-    }
-
-    
     
     
     
     // MARK: Images
     func imageSetup() {
         print(imageArray.count)
-        for i in 0..<1 {
+        for i in 0..<10 {
             imageArray.append(UIImage(named: "M/" + String(i))!)
         }
     }
@@ -137,4 +135,3 @@ class SecondViewController: UIViewController, UICollectionViewDataSource, UIColl
     
 
 }
-

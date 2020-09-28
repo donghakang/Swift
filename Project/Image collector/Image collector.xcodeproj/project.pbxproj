@@ -15,6 +15,8 @@
 		CAC51C3B2521661300B79567 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC51C392521661300B79567 /* LaunchScreen.storyboard */; };
 		CAC51C462521661300B79567 /* Image_collectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC51C452521661300B79567 /* Image_collectorTests.swift */; };
 		CAC51C512521661300B79567 /* Image_collectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC51C502521661300B79567 /* Image_collectorUITests.swift */; };
+		CAC51C632521690D00B79567 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC51C612521690D00B79567 /* MyCollectionViewCell.swift */; };
+		CAC51C642521690D00B79567 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC51C622521690D00B79567 /* MyCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		CAC51C4C2521661300B79567 /* Image collectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Image collectorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAC51C502521661300B79567 /* Image_collectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_collectorUITests.swift; sourceTree = "<group>"; };
 		CAC51C522521661300B79567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAC51C612521690D00B79567 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		CAC51C622521690D00B79567 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				CAC51C372521661300B79567 /* Assets.xcassets */,
 				CAC51C392521661300B79567 /* LaunchScreen.storyboard */,
 				CAC51C3C2521661300B79567 /* Info.plist */,
+				CAC51C612521690D00B79567 /* MyCollectionViewCell.swift */,
+				CAC51C622521690D00B79567 /* MyCollectionViewCell.xib */,
 			);
 			path = "Image collector";
 			sourceTree = "<group>";
@@ -233,6 +239,7 @@
 			files = (
 				CAC51C3B2521661300B79567 /* LaunchScreen.storyboard in Resources */,
 				CAC51C382521661300B79567 /* Assets.xcassets in Resources */,
+				CAC51C642521690D00B79567 /* MyCollectionViewCell.xib in Resources */,
 				CAC51C362521661100B79567 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +267,7 @@
 			files = (
 				CAC51C332521661100B79567 /* ViewController.swift in Sources */,
 				CAC51C2F2521661100B79567 /* AppDelegate.swift in Sources */,
+				CAC51C632521690D00B79567 /* MyCollectionViewCell.swift in Sources */,
 				CAC51C312521661100B79567 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

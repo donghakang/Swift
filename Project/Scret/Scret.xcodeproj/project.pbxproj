@@ -20,6 +20,8 @@
 		CA36DCCD251DD7E5008A9F5E /* MosaicLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36DCCC251DD7E5008A9F5E /* MosaicLayout.swift */; };
 		CA36DCD0251DD7F4008A9F5E /* MosaicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36DCCF251DD7F4008A9F5E /* MosaicCell.swift */; };
 		CAC51C1F2520EC3700B79567 /* LetterCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC51C1E2520EC3700B79567 /* LetterCollectionReusableView.swift */; };
+		CAC51C6A25216B7400B79567 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC51C6825216B7400B79567 /* MyCollectionViewCell.swift */; };
+		CAC51C6B25216B7400B79567 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC51C6925216B7400B79567 /* MyCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		CA36DCCC251DD7E5008A9F5E /* MosaicLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicLayout.swift; sourceTree = "<group>"; };
 		CA36DCCF251DD7F4008A9F5E /* MosaicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicCell.swift; sourceTree = "<group>"; };
 		CAC51C1E2520EC3700B79567 /* LetterCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterCollectionReusableView.swift; sourceTree = "<group>"; };
+		CAC51C6825216B7400B79567 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		CAC51C6925216B7400B79567 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				CA36DCCC251DD7E5008A9F5E /* MosaicLayout.swift */,
 				CA36DCCF251DD7F4008A9F5E /* MosaicCell.swift */,
 				CAC51C1E2520EC3700B79567 /* LetterCollectionReusableView.swift */,
+				CAC51C6825216B7400B79567 /* MyCollectionViewCell.swift */,
+				CAC51C6925216B7400B79567 /* MyCollectionViewCell.xib */,
 			);
 			path = control;
 			sourceTree = "<group>";
@@ -178,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC51C6B25216B7400B79567 /* MyCollectionViewCell.xib in Resources */,
 				CA1DFB792518344000338F0D /* launch_img 2.png in Resources */,
 				CA299EC82515D77400FF1373 /* LaunchScreen.storyboard in Resources */,
 				CA299EC52515D77400FF1373 /* Assets.xcassets in Resources */,
@@ -198,6 +205,7 @@
 				CA1F9D0A25172FB4000F9670 /* SecondViewController.swift in Sources */,
 				CA1F9D0D25172FBE000F9670 /* ThirdViewController.swift in Sources */,
 				CA36DCD0251DD7F4008A9F5E /* MosaicCell.swift in Sources */,
+				CAC51C6A25216B7400B79567 /* MyCollectionViewCell.swift in Sources */,
 				CAC51C1F2520EC3700B79567 /* LetterCollectionReusableView.swift in Sources */,
 				CA299ED42515FA4500FF1373 /* FirstViewController.swift in Sources */,
 				CA36DCCD251DD7E5008A9F5E /* MosaicLayout.swift in Sources */,

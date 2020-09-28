@@ -6,6 +6,7 @@ enum MosaicSegmentStyle {
     case thirds
     case twoThirdsOneThird
     case oneThirdTwoThirds
+    case infinite
 }
 
 class MosaicLayout: UICollectionViewLayout {
@@ -30,7 +31,7 @@ class MosaicLayout: UICollectionViewLayout {
         let count = collectionView.numberOfItems(inSection: 0)
         
         var currentIndex = 0
-        var segment: MosaicSegmentStyle = .thirds
+        var segment: MosaicSegmentStyle = .fullWidth
         var lastFrame: CGRect = .zero
         
         let cvWidth = collectionView.bounds.size.width
@@ -59,6 +60,8 @@ class MosaicLayout: UICollectionViewLayout {
                 let horizontalSlices = segmentFrame.dividedIntegral(fraction: (1.0 / 3.0), from: .minXEdge)
                 let verticalSlices = horizontalSlices.first.dividedIntegral(fraction: 0.5, from: .minYEdge)
                 segmentRects = [verticalSlices.first, verticalSlices.second, horizontalSlices.second]
+            case .infinite:
+                continue
             }
             
             // Create and cache layout attributes for calculated frames.
@@ -88,11 +91,10 @@ class MosaicLayout: UICollectionViewLayout {
                      segment = .oneThirdTwoThirds
                  case .oneThirdTwoThirds:
                      segment = .thirds
+                 case .infinite
+                     segment = .thirds
                  }
              }
-
-            
-//            segment = .thirds
         }
         
     }
