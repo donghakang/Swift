@@ -1,13 +1,13 @@
 //
-//  Image_collectorUITests.swift
-//  Image collectorUITests
+//  _930UITests.swift
+//  0930UITests
 //
 //  Created by Dongha Kang on 2020/09/28.
 //
 
 import XCTest
 
-class Image_collectorUITests: XCTestCase {
+class _930UITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

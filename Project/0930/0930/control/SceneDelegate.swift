@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  Image collector
+//  0930
 //
 //  Created by Dongha Kang on 2020/09/28.
 //

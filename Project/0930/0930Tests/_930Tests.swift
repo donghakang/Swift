@@ -1,14 +1,14 @@
 //
-//  Image_collectorTests.swift
-//  Image collectorTests
+//  _930Tests.swift
+//  0930Tests
 //
 //  Created by Dongha Kang on 2020/09/28.
 //
 
 import XCTest
-@testable import Image_collector
+@testable import _930
 
-class Image_collectorTests: XCTestCase {
+class _930Tests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

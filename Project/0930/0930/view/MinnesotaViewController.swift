@@ -1,53 +1,63 @@
 //
-//  ViewController.swift
-//  Mosaic Layout
+//  MinnesotaViewController.swift
+//  0930
 //
 //  Created by Dongha Kang on 2020/09/28.
 //
 
 import UIKit
 
-
-class ViewController: UICollectionViewController {
+class MinnesotaViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+
         let mosaicLayout = TRMosaicLayout()
         self.collectionView?.collectionViewLayout = mosaicLayout
         mosaicLayout.delegate = self
         
+        collectionView.register(LetterCollectionViewCell.self, forCellWithReuseIdentifier: LetterCollectionViewCell.identifier)
+        
+        collectionView.register(CollectionViewCell.nib(), forCellWithReuseIdentifier: CollectionViewCell.identifier)
     
         collectionView?.backgroundColor = .white
         collectionView?.delegate = self
         collectionView?.dataSource = self
-        collectionView.register(MyCollectionViewCell.nib(), forCellWithReuseIdentifier: MyCollectionViewCell.identifier)
         
-        collectionView.register(FooterCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: FooterCollectionReusableView.identifier)
         view.addSubview(collectionView!)
+        
+
     }
+
 }
 
 
+
 // MARK: View Controller Cell Items,
-extension ViewController {
+extension MinnesotaViewController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MyCollectionViewCell.identifier, for: indexPath)
         
-        cell.backgroundColor = .random()
-        return cell
+        if (indexPath.item == 9) {
+            let letterCell = collectionView.dequeueReusableCell(withReuseIdentifier: LetterCollectionViewCell.identifier, for: indexPath)
+            
+            return letterCell
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.identifier, for: indexPath)
+            
+            cell.backgroundColor = .random()
+            return cell
+        }
     }
 }
 
 
 
 // MARK: View Controller Layout
-extension ViewController: TRMosaicLayoutDelegate {
+extension MinnesotaViewController: TRMosaicLayoutDelegate {
     func collectionView(_ collectionView: UICollectionView, mosaicCellSizeTypeAtIndexPath indexPath: IndexPath) -> TRMosaicCellType {
 
         if indexPath.item == 9 {

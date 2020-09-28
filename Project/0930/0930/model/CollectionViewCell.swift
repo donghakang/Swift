@@ -1,18 +1,18 @@
 //
-//  MyCollectionViewCell.swift
-//  Image collector
+//  CollectionViewCell.swift
+//  0930
 //
 //  Created by Dongha Kang on 2020/09/28.
 //
 
 import UIKit
 
-class MyCollectionViewCell: UICollectionViewCell {
+class CollectionViewCell: UICollectionViewCell {
 
-    static let identifier = "MyCollectionViewCell"
+    static let identifier = "CollectionViewCell"
     
     static func nib() -> UINib {
-        return UINib(nibName: "MyCollectionViewCell", bundle: nil)
+        return UINib(nibName: "CollectionViewCell", bundle: nil)
     }
     
     
@@ -20,5 +20,4 @@ class MyCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         backgroundColor = .red
     }
-
 }
