@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CABEA39F2522DCB800B5BB7B /* BabyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEA39E2522DCB800B5BB7B /* BabyViewController.swift */; };
+		CABEA3A42523128000B5BB7B /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEA3A32523128000B5BB7B /* helper.swift */; };
 		CAE0A956252216F5006979FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE0A955252216F5006979FC /* AppDelegate.swift */; };
 		CAE0A958252216F5006979FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE0A957252216F5006979FC /* SceneDelegate.swift */; };
 		CAE0A95A252216F5006979FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE0A959252216F5006979FC /* ViewController.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CABEA39E2522DCB800B5BB7B /* BabyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyViewController.swift; sourceTree = "<group>"; };
+		CABEA3A32523128000B5BB7B /* helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
 		CAE0A952252216F5006979FC /* 0930.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 0930.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE0A955252216F5006979FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAE0A957252216F5006979FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 			children = (
 				CAE0A959252216F5006979FC /* ViewController.swift */,
 				CAE0A9A525221AB3006979FC /* MinnesotaViewController.swift */,
+				CABEA39E2522DCB800B5BB7B /* BabyViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 				CAE0A9B325221BFC006979FC /* CollectionViewCell.xib */,
 				CAE0A9B925221D67006979FC /* LetterCollectionViewCell.swift */,
 				CAE0A9BA25221D67006979FC /* LetterCollectionViewCell.xib */,
+				CABEA3A32523128000B5BB7B /* helper.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -316,6 +322,8 @@
 				CAE0A9BB25221D67006979FC /* LetterCollectionViewCell.swift in Sources */,
 				CAE0A99E25221A08006979FC /* TRMosaicColumns.swift in Sources */,
 				CAE0A95A252216F5006979FC /* ViewController.swift in Sources */,
+				CABEA3A42523128000B5BB7B /* helper.swift in Sources */,
+				CABEA39F2522DCB800B5BB7B /* BabyViewController.swift in Sources */,
 				CAE0A956252216F5006979FC /* AppDelegate.swift in Sources */,
 				CAE0A9B425221BFC006979FC /* CollectionViewCell.swift in Sources */,
 				CAE0A9A625221AB3006979FC /* MinnesotaViewController.swift in Sources */,
@@ -497,12 +505,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K83P83C9GF;
 				INFOPLIST_FILE = 0930/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.-930";
+				PRODUCT_BUNDLE_IDENTIFIER = com.donghakang.0930;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -515,12 +524,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K83P83C9GF;
 				INFOPLIST_FILE = 0930/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.-930";
+				PRODUCT_BUNDLE_IDENTIFIER = com.donghakang.0930;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

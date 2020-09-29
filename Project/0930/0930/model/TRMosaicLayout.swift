@@ -30,6 +30,7 @@ open class TRMosaicLayout: UICollectionViewLayout {
         get { return collectionView!.bounds.size.width }
     }
     
+    
     // MARK: UICollectionViewLayout Implementation
     
     override open func prepare() {
@@ -276,7 +277,7 @@ open class TRMosaicLayout: UICollectionViewLayout {
         } else if cellType == .one {
             return height * 3
         } else if cellType == .full {
-            return height * 5
+            return height * 100
         }
         return height
     }
