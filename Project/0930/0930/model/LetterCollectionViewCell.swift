@@ -28,19 +28,21 @@ class LetterCollectionViewCell: UICollectionViewCell {
             
             
             // Title Label
-            bg.addSubview(title)
             title.text = data.title
-            title.textAlignment = .center
-            title.textColor = .white
-            title.font = title.font.withSize(60)
+            bg.addSubview(title)
+
+            // Letter Text View
+            letter.text = data.letter
+            bg.addSubview(letter)
             
-            title.translatesAutoresizingMaskIntoConstraints = false;
+            
             NSLayoutConstraint.activate([
-                title.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 50),
+                letter.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -120),
+                letter.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 20),
+                letter.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -20),
+                title.bottomAnchor.constraint(equalTo: letter.topAnchor, constant: -20),
                 title.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20)
             ])
-            
-            // Letter Text View
 
             
             
@@ -48,18 +50,29 @@ class LetterCollectionViewCell: UICollectionViewCell {
     }
     
     
-    fileprivate var title: UILabel = UILabel()
+    fileprivate var title: UILabel = {
+        let title = UILabel()
+        title.text = "HELLO"
+        title.textAlignment = .center
+        title.textColor = .white
+        title.font = UIFont(name: "Jalnan", size: 60)
+        title.translatesAutoresizingMaskIntoConstraints = false
+        return title
+    }()
+    
+    fileprivate var letter: UILabel = {
+        let letter = UILabel()
+        letter.font = UIFont(name: "Jalnan", size: 20)
+        letter.translatesAutoresizingMaskIntoConstraints = false
+        letter.sizeToFit()
+        letter.numberOfLines = 0
+        letter.textColor = .white
+        return letter
+    }()
     
     fileprivate var bg: UIView = UIView()
 
-    fileprivate let tv: UITextView = {
-        let tv = UITextView()
-        tv.text = "Thread 1: Fatal error: Unexpectedly found nil while unwrapping an Optional value"
-        tv.translatesAutoresizingMaskIntoConstraints = false
-        tv.clipsToBounds = true
-        tv.textColor = .black
-        return tv
-    }()
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		CABEA39F2522DCB800B5BB7B /* BabyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEA39E2522DCB800B5BB7B /* BabyViewController.swift */; };
 		CABEA3A42523128000B5BB7B /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABEA3A32523128000B5BB7B /* helper.swift */; };
+		CABEA3BD2523303900B5BB7B /* Pistilli-Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = CABEA3BC2523303900B5BB7B /* Pistilli-Roman.otf */; };
+		CABEA3C22523323200B5BB7B /* MADE Coachella Bold PERSONAL USE.otf in Resources */ = {isa = PBXBuildFile; fileRef = CABEA3C12523323200B5BB7B /* MADE Coachella Bold PERSONAL USE.otf */; };
+		CABEA3C32523323200B5BB7B /* MADE Coachella Bold PERSONAL USE.otf in Resources */ = {isa = PBXBuildFile; fileRef = CABEA3C12523323200B5BB7B /* MADE Coachella Bold PERSONAL USE.otf */; };
+		CABEA3C42523323200B5BB7B /* MADE Coachella Bold PERSONAL USE.otf in Resources */ = {isa = PBXBuildFile; fileRef = CABEA3C12523323200B5BB7B /* MADE Coachella Bold PERSONAL USE.otf */; };
+		CABEA3CB2523323600B5BB7B /* Pistilli-Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = CABEA3BC2523303900B5BB7B /* Pistilli-Roman.otf */; };
+		CABEA3CF2523323600B5BB7B /* Pistilli-Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = CABEA3BC2523303900B5BB7B /* Pistilli-Roman.otf */; };
+		CABEA3D42523590100B5BB7B /* Jalnan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CABEA3D32523590100B5BB7B /* Jalnan.ttf */; };
 		CAE0A956252216F5006979FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE0A955252216F5006979FC /* AppDelegate.swift */; };
 		CAE0A958252216F5006979FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE0A957252216F5006979FC /* SceneDelegate.swift */; };
 		CAE0A95A252216F5006979FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE0A959252216F5006979FC /* ViewController.swift */; };
@@ -24,6 +31,17 @@
 		CAE0A9B525221BFC006979FC /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAE0A9B325221BFC006979FC /* CollectionViewCell.xib */; };
 		CAE0A9BB25221D67006979FC /* LetterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE0A9B925221D67006979FC /* LetterCollectionViewCell.swift */; };
 		CAE0A9BC25221D67006979FC /* LetterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAE0A9BA25221D67006979FC /* LetterCollectionViewCell.xib */; };
+		CAEACA9E2523604B009FFD9E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEACA9D2523604B009FFD9E /* MenuViewController.swift */; };
+		CAEACAA525237809009FFD9E /* zapsplat_cartoon_pop_mouth_011_46674.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CAEACAA325237809009FFD9E /* zapsplat_cartoon_pop_mouth_011_46674.mp3 */; };
+		CAEACAA625237809009FFD9E /* zapsplat_cartoon_pop_medium_48207.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CAEACAA425237809009FFD9E /* zapsplat_cartoon_pop_medium_48207.mp3 */; };
+		CAEACAAB25237E87009FFD9E /* radical_notion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CAEACAAA25237E87009FFD9E /* radical_notion.mp3 */; };
+		CAEACAB02523826E009FFD9E /* BostonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEACAAF2523826E009FFD9E /* BostonViewController.swift */; };
+		CAEACAB525238277009FFD9E /* KoreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEACAB425238277009FFD9E /* KoreaViewController.swift */; };
+		CAEACABD2523A6DE009FFD9E /* juice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CAEACAB92523A6DD009FFD9E /* juice.mp3 */; };
+		CAEACABE2523A6DE009FFD9E /* apunk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CAEACABA2523A6DD009FFD9E /* apunk.mp3 */; };
+		CAEACABF2523A6DE009FFD9E /* international.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CAEACABB2523A6DD009FFD9E /* international.mp3 */; };
+		CAEACAC02523A6DE009FFD9E /* minnesota.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CAEACABC2523A6DE009FFD9E /* minnesota.mp3 */; };
+		CAEACAC52523A80A009FFD9E /* tomboy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CAEACAC42523A80A009FFD9E /* tomboy.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +64,10 @@
 /* Begin PBXFileReference section */
 		CABEA39E2522DCB800B5BB7B /* BabyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyViewController.swift; sourceTree = "<group>"; };
 		CABEA3A32523128000B5BB7B /* helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
+		CABEA3B225232F5E00B5BB7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CABEA3BC2523303900B5BB7B /* Pistilli-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pistilli-Roman.otf"; sourceTree = "<group>"; };
+		CABEA3C12523323200B5BB7B /* MADE Coachella Bold PERSONAL USE.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MADE Coachella Bold PERSONAL USE.otf"; sourceTree = "<group>"; };
+		CABEA3D32523590100B5BB7B /* Jalnan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Jalnan.ttf; sourceTree = "<group>"; };
 		CAE0A952252216F5006979FC /* 0930.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 0930.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE0A955252216F5006979FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAE0A957252216F5006979FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +89,17 @@
 		CAE0A9B325221BFC006979FC /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		CAE0A9B925221D67006979FC /* LetterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterCollectionViewCell.swift; sourceTree = "<group>"; };
 		CAE0A9BA25221D67006979FC /* LetterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LetterCollectionViewCell.xib; sourceTree = "<group>"; };
+		CAEACA9D2523604B009FFD9E /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CAEACAA325237809009FFD9E /* zapsplat_cartoon_pop_mouth_011_46674.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zapsplat_cartoon_pop_mouth_011_46674.mp3; sourceTree = "<group>"; };
+		CAEACAA425237809009FFD9E /* zapsplat_cartoon_pop_medium_48207.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zapsplat_cartoon_pop_medium_48207.mp3; sourceTree = "<group>"; };
+		CAEACAAA25237E87009FFD9E /* radical_notion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = radical_notion.mp3; sourceTree = "<group>"; };
+		CAEACAAF2523826E009FFD9E /* BostonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BostonViewController.swift; sourceTree = "<group>"; };
+		CAEACAB425238277009FFD9E /* KoreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreaViewController.swift; sourceTree = "<group>"; };
+		CAEACAB92523A6DD009FFD9E /* juice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = juice.mp3; sourceTree = "<group>"; };
+		CAEACABA2523A6DD009FFD9E /* apunk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = apunk.mp3; sourceTree = "<group>"; };
+		CAEACABB2523A6DD009FFD9E /* international.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = international.mp3; sourceTree = "<group>"; };
+		CAEACABC2523A6DE009FFD9E /* minnesota.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = minnesota.mp3; sourceTree = "<group>"; };
+		CAEACAC42523A80A009FFD9E /* tomboy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tomboy.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +127,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CABEA3A825232C2B00B5BB7B /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CABEA3D32523590100B5BB7B /* Jalnan.ttf */,
+				CABEA3BC2523303900B5BB7B /* Pistilli-Roman.otf */,
+				CABEA3C12523323200B5BB7B /* MADE Coachella Bold PERSONAL USE.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		CAE0A949252216F5006979FC = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +160,8 @@
 		CAE0A954252216F5006979FC /* 0930 */ = {
 			isa = PBXGroup;
 			children = (
+				CAEACAA2252377FC009FFD9E /* sounds */,
+				CABEA3A825232C2B00B5BB7B /* fonts */,
 				CAE0A98E2522173E006979FC /* storyboard */,
 				CAE0A98A2522170F006979FC /* model */,
 				CAE0A98925221707006979FC /* control */,
@@ -151,6 +196,9 @@
 				CAE0A959252216F5006979FC /* ViewController.swift */,
 				CAE0A9A525221AB3006979FC /* MinnesotaViewController.swift */,
 				CABEA39E2522DCB800B5BB7B /* BabyViewController.swift */,
+				CAEACA9D2523604B009FFD9E /* MenuViewController.swift */,
+				CAEACAAF2523826E009FFD9E /* BostonViewController.swift */,
+				CAEACAB425238277009FFD9E /* KoreaViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -185,6 +233,21 @@
 				CAE0A960252216F6006979FC /* LaunchScreen.storyboard */,
 			);
 			path = storyboard;
+			sourceTree = "<group>";
+		};
+		CAEACAA2252377FC009FFD9E /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				CAEACABA2523A6DD009FFD9E /* apunk.mp3 */,
+				CAEACAC42523A80A009FFD9E /* tomboy.mp3 */,
+				CAEACABB2523A6DD009FFD9E /* international.mp3 */,
+				CAEACAB92523A6DD009FFD9E /* juice.mp3 */,
+				CAEACABC2523A6DE009FFD9E /* minnesota.mp3 */,
+				CAEACAAA25237E87009FFD9E /* radical_notion.mp3 */,
+				CAEACAA425237809009FFD9E /* zapsplat_cartoon_pop_medium_48207.mp3 */,
+				CAEACAA325237809009FFD9E /* zapsplat_cartoon_pop_mouth_011_46674.mp3 */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,10 +354,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAE0A962252216F6006979FC /* LaunchScreen.storyboard in Resources */,
+				CABEA3C22523323200B5BB7B /* MADE Coachella Bold PERSONAL USE.otf in Resources */,
+				CAEACAC52523A80A009FFD9E /* tomboy.mp3 in Resources */,
+				CABEA3D42523590100B5BB7B /* Jalnan.ttf in Resources */,
+				CAEACAC02523A6DE009FFD9E /* minnesota.mp3 in Resources */,
+				CAEACABD2523A6DE009FFD9E /* juice.mp3 in Resources */,
+				CAEACAA625237809009FFD9E /* zapsplat_cartoon_pop_medium_48207.mp3 in Resources */,
+				CABEA3BD2523303900B5BB7B /* Pistilli-Roman.otf in Resources */,
 				CAE0A95F252216F6006979FC /* Assets.xcassets in Resources */,
+				CAEACAA525237809009FFD9E /* zapsplat_cartoon_pop_mouth_011_46674.mp3 in Resources */,
 				CAE0A9BC25221D67006979FC /* LetterCollectionViewCell.xib in Resources */,
+				CAEACABF2523A6DE009FFD9E /* international.mp3 in Resources */,
 				CAE0A9B525221BFC006979FC /* CollectionViewCell.xib in Resources */,
+				CAEACAAB25237E87009FFD9E /* radical_notion.mp3 in Resources */,
 				CAE0A95D252216F5006979FC /* Main.storyboard in Resources */,
+				CAEACABE2523A6DE009FFD9E /* apunk.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +376,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CABEA3C32523323200B5BB7B /* MADE Coachella Bold PERSONAL USE.otf in Resources */,
+				CABEA3CB2523323600B5BB7B /* Pistilli-Roman.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +385,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CABEA3C42523323200B5BB7B /* MADE Coachella Bold PERSONAL USE.otf in Resources */,
+				CABEA3CF2523323600B5BB7B /* Pistilli-Roman.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +400,10 @@
 				CAE0A9BB25221D67006979FC /* LetterCollectionViewCell.swift in Sources */,
 				CAE0A99E25221A08006979FC /* TRMosaicColumns.swift in Sources */,
 				CAE0A95A252216F5006979FC /* ViewController.swift in Sources */,
+				CAEACAB525238277009FFD9E /* KoreaViewController.swift in Sources */,
 				CABEA3A42523128000B5BB7B /* helper.swift in Sources */,
+				CAEACA9E2523604B009FFD9E /* MenuViewController.swift in Sources */,
+				CAEACAB02523826E009FFD9E /* BostonViewController.swift in Sources */,
 				CABEA39F2522DCB800B5BB7B /* BabyViewController.swift in Sources */,
 				CAE0A956252216F5006979FC /* AppDelegate.swift in Sources */,
 				CAE0A9B425221BFC006979FC /* CollectionViewCell.swift in Sources */,
@@ -376,6 +457,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CAE0A961252216F6006979FC /* Base */,
+				CABEA3B225232F5E00B5BB7B /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

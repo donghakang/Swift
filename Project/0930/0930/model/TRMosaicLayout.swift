@@ -277,7 +277,7 @@ open class TRMosaicLayout: UICollectionViewLayout {
         } else if cellType == .one {
             return height * 3
         } else if cellType == .full {
-            return height * 100
+            return height * 50
         }
         return height
     }
