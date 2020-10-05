@@ -53,7 +53,9 @@ func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: I
     return compo.count
 }
 ```
+
 <br>
+
 여러 개의 컴포넌트가 있으면, 컴포넌트의 너비를 지정합니다.
 ```swift
 func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
@@ -68,6 +70,7 @@ func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) ->
 ```
 
 <br>
+
 Component에 표시할 항목명은 다음 메소드에서 차례로 꺼내 Picker View 에 설정합니다. compos 는 배열에 배열이 들어있는 2차원 배열이므로, compos[component][row]로 값을 꺼냅니다.
 ```swift
 func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
