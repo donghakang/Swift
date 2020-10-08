@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ICQ-xD-KMc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--웹 리스트-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Web_List" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="웹 리스트" id="MOA-bK-nJa"/>
+                    <connections>
+                        <segue destination="34T-yx-wfo" kind="show" identifier="toNext" id="KLe-R2-EBt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982.60869565217399" y="133.92857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Bub-tR-c5a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ICQ-xD-KMc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PGA-j9-vIJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0t7-YR-dml"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oVE-iX-GZ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="133.92857142857142"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="l5Q-S1-OQx">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" id="34T-yx-wfo" customClass="WebViewController" customModule="Web_List" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jp2-7W-BmG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XY7-KP-DOL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lXu-RT-yG8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="XY7-KP-DOL" secondAttribute="bottom" id="Rkr-7M-xCC"/>
+                            <constraint firstItem="XY7-KP-DOL" firstAttribute="leading" secondItem="lXu-RT-yG8" secondAttribute="leading" id="ZpO-QL-NFA"/>
+                            <constraint firstItem="XY7-KP-DOL" firstAttribute="top" secondItem="jp2-7W-BmG" secondAttribute="top" id="ne8-Ta-U82"/>
+                            <constraint firstItem="XY7-KP-DOL" firstAttribute="trailing" secondItem="lXu-RT-yG8" secondAttribute="trailing" id="yk4-oC-2Fs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="i36-JL-gnd"/>
+                    <connections>
+                        <outlet property="webView" destination="XY7-KP-DOL" id="SFH-PK-mwy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4nK-UK-Hv0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1853.6231884057972" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
