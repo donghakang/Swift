@@ -82,3 +82,7 @@ extension ViewController {
 |```numberOfRowsInSection```|한 섹션 안에 행이 몇개가 있는지|
 |```didSelectRowAt```|선택된 cell과 그 cell이 무엇을 하는지 (void)|
 |```titleForHeaderInSection```|cell의 섹션 이름을 나타내며, 실제 Output에서 section 이름을 헤더에 보여준다.|
+
+## Result
+
+![Image](im.png)
