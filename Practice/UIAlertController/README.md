@@ -78,7 +78,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
 <img src="img/im3.png" width=50%>
 <img src="img/im4.png" width=50%>
 
+<br>
+
+:key: UIAlertController의 스타일은 ```alert```뿐 만 아니라, ```actionSheet```도 존재한다. 다만 액션 시트는 text
+<img src="img/im6.png" width=40%> 
+
 --- 
 
 ## result 
 <img src="img/im5.png">
+
