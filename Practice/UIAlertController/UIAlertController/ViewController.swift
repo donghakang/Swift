@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func showAlert(_ sender: Any) {
-        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         alert.title = "타이틀"
         alert.message = "메시지"
         
@@ -35,12 +35,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.hello(action.title!)
         }))
 
-        // 텍스트 필드 setup
-        alert.addTextField{(textField) -> Void in
-            textField.delegate = self
-        }
-        
-        
+//        // 텍스트 필드 setup
+//        alert.addTextField{(textField) -> Void in
+//            textField.delegate = self
+//        }
         
         // 취소 버튼
         alert.addAction(UIAlertAction(title: "취소", style: .cancel, handler: nil))
@@ -54,8 +52,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         print(msg)
     }
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        print(textField.text!)
-    }
+//    func textFieldDidEndEditing(_ textField: UITextField) {
+//        print(textField.text!)
+//    }
 }
 
