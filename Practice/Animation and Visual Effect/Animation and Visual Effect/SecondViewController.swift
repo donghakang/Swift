@@ -9,21 +9,37 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var trash: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        addGesture()
         // Do any additional setup after loading the view.
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension SecondViewController {
+    func addGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapView(sender:)))
+        self.view.addGestureRecognizer(tapGesture)
     }
-    */
-
+    
+    @objc func tapView(sender: UITapGestureRecognizer) {
+        // 탭한 좌표를 검색
+        let tapPoint = sender.location(in: view)
+        
+        // 지정한 최종값이 될때 까지 애니메이션 적용
+        UIView.animate(
+            withDuration: 1.0,
+            delay: 0,
+            options: [.curveEaseInOut, .autoreverse, .repeat],
+//            options: .curveEaseInOut,
+            animations: {
+//                self.trash.center = tapPoint
+                self.trash.center.x = self.view.frame.width - 50
+            },
+            completion: nil)
+    }
 }

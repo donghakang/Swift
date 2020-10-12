@@ -15,6 +15,9 @@
 		CAD5068C253306A300C0E156 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD5068A253306A300C0E156 /* LaunchScreen.storyboard */; };
 		CAD50697253306A300C0E156 /* Animation_and_Visual_EffectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD50696253306A300C0E156 /* Animation_and_Visual_EffectTests.swift */; };
 		CAD506A2253306A400C0E156 /* Animation_and_Visual_EffectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD506A1253306A400C0E156 /* Animation_and_Visual_EffectUITests.swift */; };
+		CAD506B32533083800C0E156 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD506B22533083800C0E156 /* FirstViewController.swift */; };
+		CAD506B8253310CD00C0E156 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD506B7253310CD00C0E156 /* SecondViewController.swift */; };
+		CAD506BD2533174300C0E156 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD506BC2533174300C0E156 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		CAD5069D253306A400C0E156 /* Animation and Visual EffectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Animation and Visual EffectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD506A1253306A400C0E156 /* Animation_and_Visual_EffectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation_and_Visual_EffectUITests.swift; sourceTree = "<group>"; };
 		CAD506A3253306A400C0E156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAD506B22533083800C0E156 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		CAD506B7253310CD00C0E156 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		CAD506BC2533174300C0E156 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +108,10 @@
 				CAD5067F253306A100C0E156 /* AppDelegate.swift */,
 				CAD50681253306A100C0E156 /* SceneDelegate.swift */,
 				CAD50683253306A100C0E156 /* ViewController.swift */,
+				CAD506B22533083800C0E156 /* FirstViewController.swift */,
+				CAD506B7253310CD00C0E156 /* SecondViewController.swift */,
 				CAD50685253306A100C0E156 /* Main.storyboard */,
+				CAD506BC2533174300C0E156 /* ThirdViewController.swift */,
 				CAD50688253306A300C0E156 /* Assets.xcassets */,
 				CAD5068A253306A300C0E156 /* LaunchScreen.storyboard */,
 				CAD5068D253306A300C0E156 /* Info.plist */,
@@ -261,6 +270,9 @@
 				CAD50684253306A100C0E156 /* ViewController.swift in Sources */,
 				CAD50680253306A100C0E156 /* AppDelegate.swift in Sources */,
 				CAD50682253306A100C0E156 /* SceneDelegate.swift in Sources */,
+				CAD506B8253310CD00C0E156 /* SecondViewController.swift in Sources */,
+				CAD506BD2533174300C0E156 /* ThirdViewController.swift in Sources */,
+				CAD506B32533083800C0E156 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

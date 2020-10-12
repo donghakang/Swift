@@ -12,18 +12,30 @@ class ThirdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        addGesture()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func addGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapView(sender:)))
+        self.view.addGestureRecognizer(tapGesture)
     }
-    */
-
+    
+    @objc func tapView(sender: UITapGestureRecognizer) {
+        let flame = UIImageView(image: UIImage(systemName: "flame.fill"))
+        flame.alpha = 0
+        
+        let scaleTransform = CGAffineTransform(scaleX: 0.2, y: 0.2)
+        let rotationTransfrom = CGAffineTransform(rotationAngle: CGFloat(-M_PI_2))
+        let transform = scaleTransform.concatenating(rotationTransfrom)
+        flame.transform = transform
+        
+        flame.center = sender.location(in: self.view)
+        view.addSubview(flame)
+        
+        UIView.animate(withDuration: 1.0, delay: 0, options: .curveEaseInOut, animations: {
+            flame.alpha = 1.0
+            flame.transform = .identity
+        }, completion: nil)
+    }
 }
