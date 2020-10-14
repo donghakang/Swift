@@ -8,20 +8,22 @@
 import UIKit
 
 class SideMenuView: UIView {
-
+/*
+     @param {String} identifier - UIView's identifier
+     @param {int} screenW - width of the screen
+     @param {int} screenH - height of the screen
+     @param {UIView} darView - subView between Menu View and Main View
+     */
     static let identifier = "SideMenu"
     let screenW = UIScreen.main.bounds.width * 3 / 4
     let screenH = UIScreen.main.bounds.height
 
-    var isShow: Bool = false
-    
     let darkView = UIView()
     
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        isShow = false
         self.frame = CGRect(x: -screenW , y: 0 , width: screenW, height: screenH)
         self.backgroundColor = .red
         addGesture()
@@ -31,9 +33,11 @@ class SideMenuView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
-    
+    // initializing
     func addMenuTo(sender: UIViewController) {
+        /*
+         @param {UIViewController} sender - the main view controller where it has the menu view
+         */
         darkView.frame = sender.view.frame
         darkView.backgroundColor = .black
         darkView.alpha = 0.0
@@ -45,7 +49,7 @@ class SideMenuView: UIView {
     }
     
     
-    /// - side view 가 켜질때,
+    // MARK: - appear and Disappear
     func appear(sender: UIViewController){
 
         // slide sidemenu
@@ -61,9 +65,11 @@ class SideMenuView: UIView {
             self.frame = CGRect(x: -self.screenW , y: 0 , width: self.screenW, height: self.screenH)
         }, completion: nil)
     }
+    
 }
 
 
+// MARK: - Gesture Recognizer
 extension SideMenuView {
     func addGesture() {
         let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(swipeHandler(sender:)))
