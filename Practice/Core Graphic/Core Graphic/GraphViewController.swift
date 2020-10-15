@@ -20,7 +20,7 @@ class GraphViewController: UIViewController {
     
 
     func arcPercent(_ radius: CGFloat, _ percent: Double) -> UIBezierPath {
-        let endAngle = 2 * -M_PI*percent/100 - M_PI_2
+        let endAngle = 2 * M_PI*percent/100 - M_PI_2
         let path = UIBezierPath(arcCenter: CGPoint(x: 0, y: 0),
                                 radius: radius,
                                 startAngle: CGFloat(-M_PI_2),
