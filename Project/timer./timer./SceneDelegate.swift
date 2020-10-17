@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Moving Arc
+//  timer.
 //
-//  Created by Dongha Kang on 2020/10/15.
+//  Created by Dongha Kang on 2020/10/17.
 //
 
 import UIKit

@@ -1,14 +1,14 @@
 //
-//  Moving_ArcTests.swift
-//  Moving ArcTests
+//  timer_Tests.swift
+//  timer.Tests
 //
-//  Created by Dongha Kang on 2020/10/15.
+//  Created by Dongha Kang on 2020/10/17.
 //
 
 import XCTest
-@testable import Moving_Arc
+@testable import timer_
 
-class Moving_ArcTests: XCTestCase {
+class timer_Tests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

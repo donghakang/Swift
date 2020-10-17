@@ -26,6 +26,8 @@
                         <segue destination="Aco-zV-Ja8" kind="show" identifier="toFourth" id="UY6-fo-Jir"/>
                         <segue destination="Oes-WP-EFR" kind="show" identifier="toFifth" id="b4E-Hc-feW"/>
                         <segue destination="16V-ZF-ZGZ" kind="show" identifier="toSixth" id="UIs-FU-MPN"/>
+                        <segue destination="UbD-5S-mLY" kind="show" identifier="toSeventh" id="Yk2-Ab-P9h"/>
+                        <segue destination="msc-yp-bSa" kind="show" identifier="toEighth" id="cKq-N0-yUg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -145,6 +147,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tj3-9b-jmR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2180" y="365"/>
+        </scene>
+        <!--Moving Arc View Controller-->
+        <scene sceneID="No5-b3-Gyn">
+            <objects>
+                <viewController id="UbD-5S-mLY" customClass="MovingArcViewController" customModule="Core_Graphic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lf8-32-mIX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hc5-tj-2lE">
+                                <rect key="frame" x="48" y="782" width="318" height="31"/>
+                                <connections>
+                                    <action selector="sliderMove:" destination="UbD-5S-mLY" eventType="valueChanged" id="ua3-Tj-sCH"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FVq-AO-ECp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FVq-AO-ECp" firstAttribute="bottom" secondItem="hc5-tj-2lE" secondAttribute="bottom" constant="50" id="0cZ-AG-IFY"/>
+                            <constraint firstItem="hc5-tj-2lE" firstAttribute="leading" secondItem="FVq-AO-ECp" secondAttribute="leading" constant="50" id="cyk-6E-wUA"/>
+                            <constraint firstItem="FVq-AO-ECp" firstAttribute="trailing" secondItem="hc5-tj-2lE" secondAttribute="trailing" constant="50" id="m1o-6E-H9h"/>
+                            <constraint firstItem="hc5-tj-2lE" firstAttribute="centerX" secondItem="lf8-32-mIX" secondAttribute="centerX" id="qqR-Q6-fk5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uQE-cK-g98"/>
+                    <connections>
+                        <outlet property="slider" destination="hc5-tj-2lE" id="QaK-li-a0Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rdK-SD-VY7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2966.666666666667" y="-275.22321428571428"/>
+        </scene>
+        <!--Moving Arc Timer View Controller-->
+        <scene sceneID="OVl-rL-z1V">
+            <objects>
+                <viewController id="msc-yp-bSa" customClass="MovingArcTimerViewController" customModule="Core_Graphic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WBU-bz-YtE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5CC-sx-mJZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qmY-15-ila"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PxS-vz-V0G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2967" y="365"/>
         </scene>
     </scenes>
     <resources>

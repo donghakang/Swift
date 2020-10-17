@@ -18,7 +18,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         "타원형 도형 이미지",
         "원호 그리기",
         "부채꼴 그리기",
-        "핵분율 그래프"
+        "핵분율 그래프",
+        "움직이는 그래프",
+        "움직이는 그래프 (타이머)"
     ]
     
     // table view
@@ -65,6 +67,10 @@ extension ViewController {
             performSegue(withIdentifier: "toFifth", sender: self)
         } else if indexPath.row == 5 {
             performSegue(withIdentifier: "toSixth", sender: self)
+        } else if indexPath.row == 6 {
+            performSegue(withIdentifier: "toSeventh", sender: self)
+        } else if indexPath.row == 7 {
+            performSegue(withIdentifier: "toEighth", sender: self)
         }
     }
 }

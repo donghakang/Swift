@@ -1,13 +1,13 @@
 //
-//  Moving_ArcUITests.swift
-//  Moving ArcUITests
+//  timer_UITests.swift
+//  timer.UITests
 //
-//  Created by Dongha Kang on 2020/10/15.
+//  Created by Dongha Kang on 2020/10/17.
 //
 
 import XCTest
 
-class Moving_ArcUITests: XCTestCase {
+class timer_UITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

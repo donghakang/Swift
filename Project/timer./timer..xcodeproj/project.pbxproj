@@ -7,66 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA71CA4E253848FA002F887B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CA4D253848FA002F887B /* AppDelegate.swift */; };
-		CA71CA50253848FA002F887B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CA4F253848FA002F887B /* SceneDelegate.swift */; };
-		CA71CA52253848FA002F887B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CA51253848FA002F887B /* ViewController.swift */; };
-		CA71CA55253848FA002F887B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA71CA53253848FA002F887B /* Main.storyboard */; };
-		CA71CA57253848FD002F887B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA71CA56253848FD002F887B /* Assets.xcassets */; };
-		CA71CA5A253848FD002F887B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA71CA58253848FD002F887B /* LaunchScreen.storyboard */; };
-		CA71CA65253848FD002F887B /* Moving_ArcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CA64253848FD002F887B /* Moving_ArcTests.swift */; };
-		CA71CA70253848FD002F887B /* Moving_ArcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CA6F253848FD002F887B /* Moving_ArcUITests.swift */; };
+		CADFEEB2253B0437005F2DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFEEB1253B0437005F2DEF /* AppDelegate.swift */; };
+		CADFEEB4253B0437005F2DEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFEEB3253B0437005F2DEF /* SceneDelegate.swift */; };
+		CADFEEB6253B0437005F2DEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFEEB5253B0437005F2DEF /* ViewController.swift */; };
+		CADFEEB9253B0437005F2DEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADFEEB7253B0437005F2DEF /* Main.storyboard */; };
+		CADFEEBB253B043A005F2DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CADFEEBA253B043A005F2DEF /* Assets.xcassets */; };
+		CADFEEBE253B043A005F2DEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADFEEBC253B043A005F2DEF /* LaunchScreen.storyboard */; };
+		CADFEEC9253B043A005F2DEF /* timer_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFEEC8253B043A005F2DEF /* timer_Tests.swift */; };
+		CADFEED4253B043A005F2DEF /* timer_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFEED3253B043A005F2DEF /* timer_UITests.swift */; };
+		CADFEEE5253B11A7005F2DEF /* customTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADFEEE4253B11A7005F2DEF /* customTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CA71CA61253848FD002F887B /* PBXContainerItemProxy */ = {
+		CADFEEC5253B043A005F2DEF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CA71CA42253848FA002F887B /* Project object */;
+			containerPortal = CADFEEA6253B0436005F2DEF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CA71CA49253848FA002F887B;
-			remoteInfo = "Moving Arc";
+			remoteGlobalIDString = CADFEEAD253B0437005F2DEF;
+			remoteInfo = timer.;
 		};
-		CA71CA6C253848FD002F887B /* PBXContainerItemProxy */ = {
+		CADFEED0253B043A005F2DEF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CA71CA42253848FA002F887B /* Project object */;
+			containerPortal = CADFEEA6253B0436005F2DEF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CA71CA49253848FA002F887B;
-			remoteInfo = "Moving Arc";
+			remoteGlobalIDString = CADFEEAD253B0437005F2DEF;
+			remoteInfo = timer.;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CA71CA4A253848FA002F887B /* Moving Arc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moving Arc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA71CA4D253848FA002F887B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA71CA4F253848FA002F887B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA71CA51253848FA002F887B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CA71CA54253848FA002F887B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CA71CA56253848FD002F887B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CA71CA59253848FD002F887B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CA71CA5B253848FD002F887B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA71CA60253848FD002F887B /* Moving ArcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Moving ArcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA71CA64253848FD002F887B /* Moving_ArcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moving_ArcTests.swift; sourceTree = "<group>"; };
-		CA71CA66253848FD002F887B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA71CA6B253848FD002F887B /* Moving ArcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Moving ArcUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA71CA6F253848FD002F887B /* Moving_ArcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moving_ArcUITests.swift; sourceTree = "<group>"; };
-		CA71CA71253848FD002F887B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CADFEEAE253B0437005F2DEF /* timer..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timer..app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CADFEEB1253B0437005F2DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CADFEEB3253B0437005F2DEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CADFEEB5253B0437005F2DEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CADFEEB8253B0437005F2DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CADFEEBA253B043A005F2DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CADFEEBD253B043A005F2DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CADFEEBF253B043A005F2DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CADFEEC4253B043A005F2DEF /* timer.Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timer.Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CADFEEC8253B043A005F2DEF /* timer_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timer_Tests.swift; sourceTree = "<group>"; };
+		CADFEECA253B043A005F2DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CADFEECF253B043A005F2DEF /* timer.UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timer.UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CADFEED3253B043A005F2DEF /* timer_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timer_UITests.swift; sourceTree = "<group>"; };
+		CADFEED5253B043A005F2DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CADFEEE4253B11A7005F2DEF /* customTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CA71CA47253848FA002F887B /* Frameworks */ = {
+		CADFEEAB253B0437005F2DEF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA71CA5D253848FD002F887B /* Frameworks */ = {
+		CADFEEC1253B043A005F2DEF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA71CA68253848FD002F887B /* Frameworks */ = {
+		CADFEECC253B043A005F2DEF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,137 +78,138 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CA71CA41253848FA002F887B = {
+		CADFEEA5253B0436005F2DEF = {
 			isa = PBXGroup;
 			children = (
-				CA71CA4C253848FA002F887B /* Moving Arc */,
-				CA71CA63253848FD002F887B /* Moving ArcTests */,
-				CA71CA6E253848FD002F887B /* Moving ArcUITests */,
-				CA71CA4B253848FA002F887B /* Products */,
+				CADFEEB0253B0437005F2DEF /* timer. */,
+				CADFEEC7253B043A005F2DEF /* timer.Tests */,
+				CADFEED2253B043A005F2DEF /* timer.UITests */,
+				CADFEEAF253B0437005F2DEF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CA71CA4B253848FA002F887B /* Products */ = {
+		CADFEEAF253B0437005F2DEF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA71CA4A253848FA002F887B /* Moving Arc.app */,
-				CA71CA60253848FD002F887B /* Moving ArcTests.xctest */,
-				CA71CA6B253848FD002F887B /* Moving ArcUITests.xctest */,
+				CADFEEAE253B0437005F2DEF /* timer..app */,
+				CADFEEC4253B043A005F2DEF /* timer.Tests.xctest */,
+				CADFEECF253B043A005F2DEF /* timer.UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CA71CA4C253848FA002F887B /* Moving Arc */ = {
+		CADFEEB0253B0437005F2DEF /* timer. */ = {
 			isa = PBXGroup;
 			children = (
-				CA71CA4D253848FA002F887B /* AppDelegate.swift */,
-				CA71CA4F253848FA002F887B /* SceneDelegate.swift */,
-				CA71CA51253848FA002F887B /* ViewController.swift */,
-				CA71CA53253848FA002F887B /* Main.storyboard */,
-				CA71CA56253848FD002F887B /* Assets.xcassets */,
-				CA71CA58253848FD002F887B /* LaunchScreen.storyboard */,
-				CA71CA5B253848FD002F887B /* Info.plist */,
+				CADFEEB1253B0437005F2DEF /* AppDelegate.swift */,
+				CADFEEB3253B0437005F2DEF /* SceneDelegate.swift */,
+				CADFEEB5253B0437005F2DEF /* ViewController.swift */,
+				CADFEEB7253B0437005F2DEF /* Main.storyboard */,
+				CADFEEE4253B11A7005F2DEF /* customTime.swift */,
+				CADFEEBA253B043A005F2DEF /* Assets.xcassets */,
+				CADFEEBC253B043A005F2DEF /* LaunchScreen.storyboard */,
+				CADFEEBF253B043A005F2DEF /* Info.plist */,
 			);
-			path = "Moving Arc";
+			path = timer.;
 			sourceTree = "<group>";
 		};
-		CA71CA63253848FD002F887B /* Moving ArcTests */ = {
+		CADFEEC7253B043A005F2DEF /* timer.Tests */ = {
 			isa = PBXGroup;
 			children = (
-				CA71CA64253848FD002F887B /* Moving_ArcTests.swift */,
-				CA71CA66253848FD002F887B /* Info.plist */,
+				CADFEEC8253B043A005F2DEF /* timer_Tests.swift */,
+				CADFEECA253B043A005F2DEF /* Info.plist */,
 			);
-			path = "Moving ArcTests";
+			path = timer.Tests;
 			sourceTree = "<group>";
 		};
-		CA71CA6E253848FD002F887B /* Moving ArcUITests */ = {
+		CADFEED2253B043A005F2DEF /* timer.UITests */ = {
 			isa = PBXGroup;
 			children = (
-				CA71CA6F253848FD002F887B /* Moving_ArcUITests.swift */,
-				CA71CA71253848FD002F887B /* Info.plist */,
+				CADFEED3253B043A005F2DEF /* timer_UITests.swift */,
+				CADFEED5253B043A005F2DEF /* Info.plist */,
 			);
-			path = "Moving ArcUITests";
+			path = timer.UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CA71CA49253848FA002F887B /* Moving Arc */ = {
+		CADFEEAD253B0437005F2DEF /* timer. */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA71CA74253848FD002F887B /* Build configuration list for PBXNativeTarget "Moving Arc" */;
+			buildConfigurationList = CADFEED8253B043A005F2DEF /* Build configuration list for PBXNativeTarget "timer." */;
 			buildPhases = (
-				CA71CA46253848FA002F887B /* Sources */,
-				CA71CA47253848FA002F887B /* Frameworks */,
-				CA71CA48253848FA002F887B /* Resources */,
+				CADFEEAA253B0437005F2DEF /* Sources */,
+				CADFEEAB253B0437005F2DEF /* Frameworks */,
+				CADFEEAC253B0437005F2DEF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Moving Arc";
-			productName = "Moving Arc";
-			productReference = CA71CA4A253848FA002F887B /* Moving Arc.app */;
+			name = timer.;
+			productName = timer.;
+			productReference = CADFEEAE253B0437005F2DEF /* timer..app */;
 			productType = "com.apple.product-type.application";
 		};
-		CA71CA5F253848FD002F887B /* Moving ArcTests */ = {
+		CADFEEC3253B043A005F2DEF /* timer.Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA71CA77253848FD002F887B /* Build configuration list for PBXNativeTarget "Moving ArcTests" */;
+			buildConfigurationList = CADFEEDB253B043A005F2DEF /* Build configuration list for PBXNativeTarget "timer.Tests" */;
 			buildPhases = (
-				CA71CA5C253848FD002F887B /* Sources */,
-				CA71CA5D253848FD002F887B /* Frameworks */,
-				CA71CA5E253848FD002F887B /* Resources */,
+				CADFEEC0253B043A005F2DEF /* Sources */,
+				CADFEEC1253B043A005F2DEF /* Frameworks */,
+				CADFEEC2253B043A005F2DEF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CA71CA62253848FD002F887B /* PBXTargetDependency */,
+				CADFEEC6253B043A005F2DEF /* PBXTargetDependency */,
 			);
-			name = "Moving ArcTests";
-			productName = "Moving ArcTests";
-			productReference = CA71CA60253848FD002F887B /* Moving ArcTests.xctest */;
+			name = timer.Tests;
+			productName = timer.Tests;
+			productReference = CADFEEC4253B043A005F2DEF /* timer.Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CA71CA6A253848FD002F887B /* Moving ArcUITests */ = {
+		CADFEECE253B043A005F2DEF /* timer.UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA71CA7A253848FD002F887B /* Build configuration list for PBXNativeTarget "Moving ArcUITests" */;
+			buildConfigurationList = CADFEEDE253B043A005F2DEF /* Build configuration list for PBXNativeTarget "timer.UITests" */;
 			buildPhases = (
-				CA71CA67253848FD002F887B /* Sources */,
-				CA71CA68253848FD002F887B /* Frameworks */,
-				CA71CA69253848FD002F887B /* Resources */,
+				CADFEECB253B043A005F2DEF /* Sources */,
+				CADFEECC253B043A005F2DEF /* Frameworks */,
+				CADFEECD253B043A005F2DEF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CA71CA6D253848FD002F887B /* PBXTargetDependency */,
+				CADFEED1253B043A005F2DEF /* PBXTargetDependency */,
 			);
-			name = "Moving ArcUITests";
-			productName = "Moving ArcUITests";
-			productReference = CA71CA6B253848FD002F887B /* Moving ArcUITests.xctest */;
+			name = timer.UITests;
+			productName = timer.UITests;
+			productReference = CADFEECF253B043A005F2DEF /* timer.UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CA71CA42253848FA002F887B /* Project object */ = {
+		CADFEEA6253B0436005F2DEF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
-					CA71CA49253848FA002F887B = {
+					CADFEEAD253B0437005F2DEF = {
 						CreatedOnToolsVersion = 12.0;
 					};
-					CA71CA5F253848FD002F887B = {
+					CADFEEC3253B043A005F2DEF = {
 						CreatedOnToolsVersion = 12.0;
-						TestTargetID = CA71CA49253848FA002F887B;
+						TestTargetID = CADFEEAD253B0437005F2DEF;
 					};
-					CA71CA6A253848FD002F887B = {
+					CADFEECE253B043A005F2DEF = {
 						CreatedOnToolsVersion = 12.0;
-						TestTargetID = CA71CA49253848FA002F887B;
+						TestTargetID = CADFEEAD253B0437005F2DEF;
 					};
 				};
 			};
-			buildConfigurationList = CA71CA45253848FA002F887B /* Build configuration list for PBXProject "Moving Arc" */;
+			buildConfigurationList = CADFEEA9253B0436005F2DEF /* Build configuration list for PBXProject "timer." */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -214,37 +217,37 @@
 				en,
 				Base,
 			);
-			mainGroup = CA71CA41253848FA002F887B;
-			productRefGroup = CA71CA4B253848FA002F887B /* Products */;
+			mainGroup = CADFEEA5253B0436005F2DEF;
+			productRefGroup = CADFEEAF253B0437005F2DEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA71CA49253848FA002F887B /* Moving Arc */,
-				CA71CA5F253848FD002F887B /* Moving ArcTests */,
-				CA71CA6A253848FD002F887B /* Moving ArcUITests */,
+				CADFEEAD253B0437005F2DEF /* timer. */,
+				CADFEEC3253B043A005F2DEF /* timer.Tests */,
+				CADFEECE253B043A005F2DEF /* timer.UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CA71CA48253848FA002F887B /* Resources */ = {
+		CADFEEAC253B0437005F2DEF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA71CA5A253848FD002F887B /* LaunchScreen.storyboard in Resources */,
-				CA71CA57253848FD002F887B /* Assets.xcassets in Resources */,
-				CA71CA55253848FA002F887B /* Main.storyboard in Resources */,
+				CADFEEBE253B043A005F2DEF /* LaunchScreen.storyboard in Resources */,
+				CADFEEBB253B043A005F2DEF /* Assets.xcassets in Resources */,
+				CADFEEB9253B0437005F2DEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA71CA5E253848FD002F887B /* Resources */ = {
+		CADFEEC2253B043A005F2DEF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA71CA69253848FD002F887B /* Resources */ = {
+		CADFEECD253B043A005F2DEF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -254,60 +257,61 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CA71CA46253848FA002F887B /* Sources */ = {
+		CADFEEAA253B0437005F2DEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA71CA52253848FA002F887B /* ViewController.swift in Sources */,
-				CA71CA4E253848FA002F887B /* AppDelegate.swift in Sources */,
-				CA71CA50253848FA002F887B /* SceneDelegate.swift in Sources */,
+				CADFEEB6253B0437005F2DEF /* ViewController.swift in Sources */,
+				CADFEEE5253B11A7005F2DEF /* customTime.swift in Sources */,
+				CADFEEB2253B0437005F2DEF /* AppDelegate.swift in Sources */,
+				CADFEEB4253B0437005F2DEF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA71CA5C253848FD002F887B /* Sources */ = {
+		CADFEEC0253B043A005F2DEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA71CA65253848FD002F887B /* Moving_ArcTests.swift in Sources */,
+				CADFEEC9253B043A005F2DEF /* timer_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA71CA67253848FD002F887B /* Sources */ = {
+		CADFEECB253B043A005F2DEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA71CA70253848FD002F887B /* Moving_ArcUITests.swift in Sources */,
+				CADFEED4253B043A005F2DEF /* timer_UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CA71CA62253848FD002F887B /* PBXTargetDependency */ = {
+		CADFEEC6253B043A005F2DEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CA71CA49253848FA002F887B /* Moving Arc */;
-			targetProxy = CA71CA61253848FD002F887B /* PBXContainerItemProxy */;
+			target = CADFEEAD253B0437005F2DEF /* timer. */;
+			targetProxy = CADFEEC5253B043A005F2DEF /* PBXContainerItemProxy */;
 		};
-		CA71CA6D253848FD002F887B /* PBXTargetDependency */ = {
+		CADFEED1253B043A005F2DEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CA71CA49253848FA002F887B /* Moving Arc */;
-			targetProxy = CA71CA6C253848FD002F887B /* PBXContainerItemProxy */;
+			target = CADFEEAD253B0437005F2DEF /* timer. */;
+			targetProxy = CADFEED0253B043A005F2DEF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CA71CA53253848FA002F887B /* Main.storyboard */ = {
+		CADFEEB7253B0437005F2DEF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CA71CA54253848FA002F887B /* Base */,
+				CADFEEB8253B0437005F2DEF /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		CA71CA58253848FD002F887B /* LaunchScreen.storyboard */ = {
+		CADFEEBC253B043A005F2DEF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CA71CA59253848FD002F887B /* Base */,
+				CADFEEBD253B043A005F2DEF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -315,7 +319,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CA71CA72253848FD002F887B /* Debug */ = {
+		CADFEED6253B043A005F2DEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -376,7 +380,7 @@
 			};
 			name = Debug;
 		};
-		CA71CA73253848FD002F887B /* Release */ = {
+		CADFEED7253B043A005F2DEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -431,162 +435,162 @@
 			};
 			name = Release;
 		};
-		CA71CA75253848FD002F887B /* Debug */ = {
+		CADFEED9253B043A005F2DEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Moving Arc/Info.plist";
+				INFOPLIST_FILE = timer./Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.Moving-Arc";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.timer-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		CA71CA76253848FD002F887B /* Release */ = {
+		CADFEEDA253B043A005F2DEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Moving Arc/Info.plist";
+				INFOPLIST_FILE = timer./Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.Moving-Arc";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.timer-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		CA71CA78253848FD002F887B /* Debug */ = {
+		CADFEEDC253B043A005F2DEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Moving ArcTests/Info.plist";
+				INFOPLIST_FILE = timer.Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.Moving-ArcTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.timer-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moving Arc.app/Moving Arc";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/timer..app/timer.";
 			};
 			name = Debug;
 		};
-		CA71CA79253848FD002F887B /* Release */ = {
+		CADFEEDD253B043A005F2DEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Moving ArcTests/Info.plist";
+				INFOPLIST_FILE = timer.Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.Moving-ArcTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.timer-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moving Arc.app/Moving Arc";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/timer..app/timer.";
 			};
 			name = Release;
 		};
-		CA71CA7B253848FD002F887B /* Debug */ = {
+		CADFEEDF253B043A005F2DEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Moving ArcUITests/Info.plist";
+				INFOPLIST_FILE = timer.UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.Moving-ArcUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.timer-UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Moving Arc";
+				TEST_TARGET_NAME = timer.;
 			};
 			name = Debug;
 		};
-		CA71CA7C253848FD002F887B /* Release */ = {
+		CADFEEE0253B043A005F2DEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Moving ArcUITests/Info.plist";
+				INFOPLIST_FILE = timer.UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.Moving-ArcUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.timer-UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Moving Arc";
+				TEST_TARGET_NAME = timer.;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CA71CA45253848FA002F887B /* Build configuration list for PBXProject "Moving Arc" */ = {
+		CADFEEA9253B0436005F2DEF /* Build configuration list for PBXProject "timer." */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA71CA72253848FD002F887B /* Debug */,
-				CA71CA73253848FD002F887B /* Release */,
+				CADFEED6253B043A005F2DEF /* Debug */,
+				CADFEED7253B043A005F2DEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA71CA74253848FD002F887B /* Build configuration list for PBXNativeTarget "Moving Arc" */ = {
+		CADFEED8253B043A005F2DEF /* Build configuration list for PBXNativeTarget "timer." */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA71CA75253848FD002F887B /* Debug */,
-				CA71CA76253848FD002F887B /* Release */,
+				CADFEED9253B043A005F2DEF /* Debug */,
+				CADFEEDA253B043A005F2DEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA71CA77253848FD002F887B /* Build configuration list for PBXNativeTarget "Moving ArcTests" */ = {
+		CADFEEDB253B043A005F2DEF /* Build configuration list for PBXNativeTarget "timer.Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA71CA78253848FD002F887B /* Debug */,
-				CA71CA79253848FD002F887B /* Release */,
+				CADFEEDC253B043A005F2DEF /* Debug */,
+				CADFEEDD253B043A005F2DEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA71CA7A253848FD002F887B /* Build configuration list for PBXNativeTarget "Moving ArcUITests" */ = {
+		CADFEEDE253B043A005F2DEF /* Build configuration list for PBXNativeTarget "timer.UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA71CA7B253848FD002F887B /* Debug */,
-				CA71CA7C253848FD002F887B /* Release */,
+				CADFEEDF253B043A005F2DEF /* Debug */,
+				CADFEEE0253B043A005F2DEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CA71CA42253848FA002F887B /* Project object */;
+	rootObject = CADFEEA6253B0436005F2DEF /* Project object */;
 }
