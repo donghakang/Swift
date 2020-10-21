@@ -1,0 +1,1225 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		3516E9D4735D155BC036A4DB393966FC /* naveridlogin-sdk-ios */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2C86B7F394788F8E6171908E62DD5DAF /* Build configuration list for PBXAggregateTarget "naveridlogin-sdk-ios" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "naveridlogin-sdk-ios";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		013BAC24F7AC722E59517CB110A9E685 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AE54119E82880935F15100B603A629 /* HTTPMethod.swift */; };
+		0A1849775CF90D514963187D3A771CF8 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809668C0BBBA4810EB4C60ED4C6AF4AB /* Combine.swift */; };
+		0A900DF17E3B64F08AF673E9A0DDD697 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65A589FBEA2A946B0B0B88F91A879F3 /* OperationQueue+Alamofire.swift */; };
+		1208E81DA8B532D0646D627B50290EB6 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F82DA3C4250FD0AF4AC7A2FB294F9D3 /* AFError.swift */; };
+		137CB587E81DA03F81185CCA4B6C9EFD /* Pods-naver-loginTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5947701C8BB79863FCDB8D99FD525BC2 /* Pods-naver-loginTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1781688270109378DFDED8232C424963 /* Pods-naver-login-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65E9E45D8FF7F4BE61C06678B8CD9CD3 /* Pods-naver-login-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19D605A3233499828FB6B790869F3E9C /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4EEF5BCFCC3D8F74B39893FBBFA3F9 /* NetworkReachabilityManager.swift */; };
+		212EDC48B68107BEA9247F3464CE696E /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19A5132581E9187B59C500E0E27EE14 /* StringEncoding+Alamofire.swift */; };
+		218C14EAE5AA31C30314AE0289B732A0 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = C326926B4709CDCFD4F116975B556073 /* Protected.swift */; };
+		27E59A11A2743B0595CDE3A08675EAE1 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDE4FC7C8CB1E7C878A2E67E28649D /* DispatchQueue+Alamofire.swift */; };
+		381FF05F8B4F611EE9C2FDBE4457BB89 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47D029C2FE956DC17DE5ED09C2C3622 /* SessionDelegate.swift */; };
+		45B8CC1C61E7A0BB28CFA8CE7C12FEBC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079B12A885A139C5DB7190F54755449B /* MultipartFormData.swift */; };
+		47FDBBBD2704901588C3A7C56BBC502D /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3BDF2A62DDF0B45B72CDEEB821AD7 /* ServerTrustEvaluation.swift */; };
+		4AEC050FA7D5ED52FDA9DF50EA3560DF /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FACD584CE1AE9F385901E140561370 /* ParameterEncoder.swift */; };
+		54C50F35C7E1BB8A13A492B2077656B2 /* Pods-naver-loginTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 224CDEB10E7400C62D680990F8B18CDD /* Pods-naver-loginTests-dummy.m */; };
+		6546D728B69398F93B506845141EBD61 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2488D8AF22EB5AD6BEA5380FCF4694E /* EventMonitor.swift */; };
+		666EC5C8356E6D4448A2FE7BEE77AD88 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88073306B68F7F6EE3EFB6920E4D287 /* RedirectHandler.swift */; };
+		66B26C6CAE737EC21F4BA1F1851B69C5 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ABAB7A6D62F8F1ADB96503AEBB0C17 /* Result+Alamofire.swift */; };
+		6AE407A4FB6C3D6ADD862CC6E3067A17 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CD8F1C977CE1CE1952EC6FE40C9613 /* Session.swift */; };
+		6C08F6A77889651626583100F560153D /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFD27A7B81BC5F224A1DCCB4CB0A500 /* RequestTaskMap.swift */; };
+		6E54F64E8DA73F4B0B46C216F9F93F63 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA04E02F3CF9FAA42754CC6E9595D1BD /* RequestInterceptor.swift */; };
+		72EC2712926E6D28B52360D9AC41668F /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54138FC3766F7907A1066ED6EEDFCB52 /* AlamofireExtended.swift */; };
+		7D3DD4A8BB36733BA15868F7FB8C56CE /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40401B595498FE529632752924380808 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AA937910F87915DE700CAB6C868689E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8E16E16E7D891A431941CDD6E5E235 /* Notifications.swift */; };
+		8BAEE339D40646C28E31ACC04F309655 /* Pods-naver-login-naver-loginUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 328C908CADB687CB3E4D46B5643F4D37 /* Pods-naver-login-naver-loginUITests-dummy.m */; };
+		911448B2EDA2FF880108F77642797A88 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC5FF8A24641342CC1E6998DF862D6E /* ResponseSerialization.swift */; };
+		91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85E8386CFAF9CAD9B4CE2AD396452E /* HTTPHeaders.swift */; };
+		97745E5860D673FD1780D9640D40061F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		9B1D8A7798D8A6F518FC9AF9725431D0 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9323C4977A7C1F05FDE727FD41CE3610 /* URLConvertible+URLRequestConvertible.swift */; };
+		9FED70D1E1FBFB80E974E999EF732258 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8FC6E48C9B39BBFC2208CA4AB8D55C /* RetryPolicy.swift */; };
+		A738C2A39C0150BBA7EA5EC19B95F03E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */; };
+		A8F4CAB164427E5F463793FD0B584547 /* Pods-naver-login-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8258522D1FA280966E1E18D7CB24480F /* Pods-naver-login-dummy.m */; };
+		ABA85887A41495358C83CE3F3030EDEA /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C7D444D8E4BBD0263EF97E246CB87 /* CachedResponseHandler.swift */; };
+		C1C5B050B55C15103ABC81769551A283 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD57D4BC96B96C3533461F4C31739B7 /* Response.swift */; };
+		C1F1DB6A9CBDE584D09BA1613AAD4F9D /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387F3334ED0E3164A958A7A26B49EDF7 /* Alamofire.swift */; };
+		C2DE654524C9FF0E37CF5F07F1E16F80 /* Pods-naver-login-naver-loginUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40F7E1795A618863C2651751A42CA71F /* Pods-naver-login-naver-loginUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6D5A4B4028B2C43380C9FA58BD5C8CA /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F483766E169EF970F44AF8282A6C8 /* Alamofire-dummy.m */; };
+		CA3DD39551C4EA86DE5637F51898C033 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		D03F1F02DE8606E6057D57866611BEBF /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84708B6C894B873D98A1DE34448EF3CE /* MultipartUpload.swift */; };
+		D14066FAE94E304798E43651E5886D13 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF29B7C03B4AFC5AF59C7CD48A237AD /* ParameterEncoding.swift */; };
+		D31FC7FDD450C4CDD633ECBAD27C6221 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE630FA38555A75D9AF969CCBE01952E /* URLEncodedFormEncoder.swift */; };
+		D5EAAFB6FAD77A8F0699345149BA3CBB /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3170791FED02D8D1C58B35A265F5384 /* URLRequest+Alamofire.swift */; };
+		DC627AFC5B585686898B014184AFCABD /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC9F8CDDCB92EA67E356B6D56F0EED /* AuthenticationInterceptor.swift */; };
+		EDC93BD7B9262119AE145E4C7A9D0212 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DADBAE028050877814415787D98100 /* Request.swift */; };
+		F0F3224FF592F9BA2A044A2FC2BD4CCD /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F88B3E1C1CA15A727DE8F1F8CB3692 /* Validation.swift */; };
+		F618CB00CA1FB00619BBDC5CB03B100F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		F6B16DC8CADA07287C6A372AC8AD787C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		F70EF854395CDE981A8336E4FF0310FE /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156B0BD886C32C2CCCF48B834D08AA31 /* URLSessionConfiguration+Alamofire.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2229B90B085D5A541AB50EFC348DB78D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3516E9D4735D155BC036A4DB393966FC;
+			remoteInfo = "naveridlogin-sdk-ios";
+		};
+		3C34C20057368907D46C12F933B4A874 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		50A4F7DC6CBA526DCD7E6752E7D3649B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5450FA4AD7786D01278988BFE4DBA497;
+			remoteInfo = "Pods-naver-login";
+		};
+		8A5CA23858DAC83B966156B4A294BC21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3516E9D4735D155BC036A4DB393966FC;
+			remoteInfo = "naveridlogin-sdk-ios";
+		};
+		CACB025AED89FC3E96CF0231DA3B3A1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02E4D70C6E66545A6E0F9D6C2A045C8B /* Pods-naver-loginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-naver-loginTests.release.xcconfig"; sourceTree = "<group>"; };
+		076B1B182992283F7B6D26BBC84CF22A /* Pods_naver_loginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_naver_loginTests.framework; path = "Pods-naver-loginTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		079B12A885A139C5DB7190F54755449B /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		08ABAB7A6D62F8F1ADB96503AEBB0C17 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
+		0A54F4998B9F843B4F2731ABEB4A86F7 /* Pods-naver-login-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-naver-login-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0AD57D4BC96B96C3533461F4C31739B7 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		1352B88098B2E91D029DF771F0532B2C /* Pods-naver-login-naver-loginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-naver-login-naver-loginUITests.release.xcconfig"; sourceTree = "<group>"; };
+		156B0BD886C32C2CCCF48B834D08AA31 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		16F88B3E1C1CA15A727DE8F1F8CB3692 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		1BC5FF8A24641342CC1E6998DF862D6E /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		1C5098D706CEBA8445DA6A9F3C8AB26D /* Pods-naver-login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-naver-login.debug.xcconfig"; sourceTree = "<group>"; };
+		1FFC911775D0BDB52DE0623D07FB8028 /* Pods-naver-login.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-naver-login.modulemap"; sourceTree = "<group>"; };
+		20CB6F9CECE93520E866E56878D9BEB6 /* Pods_naver_login_naver_loginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_naver_login_naver_loginUITests.framework; path = "Pods-naver-login-naver-loginUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		224CDEB10E7400C62D680990F8B18CDD /* Pods-naver-loginTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-naver-loginTests-dummy.m"; sourceTree = "<group>"; };
+		27F5167C8638D911CEF4AAAB86F6D237 /* Pods-naver-login-naver-loginUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-naver-login-naver-loginUITests.modulemap"; sourceTree = "<group>"; };
+		2CFC9F8CDDCB92EA67E356B6D56F0EED /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
+		2F8E16E16E7D891A431941CDD6E5E235 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		328C908CADB687CB3E4D46B5643F4D37 /* Pods-naver-login-naver-loginUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-naver-login-naver-loginUITests-dummy.m"; sourceTree = "<group>"; };
+		340D49244262A065D6C45089A1BF3996 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		372C38A4CC28A3EE917CF980AC4B49EB /* Pods-naver-login-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-naver-login-acknowledgements.plist"; sourceTree = "<group>"; };
+		387F3334ED0E3164A958A7A26B49EDF7 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		3E5126E763F4F78608382E08656C1855 /* naveridlogin-sdk-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "naveridlogin-sdk-ios.release.xcconfig"; sourceTree = "<group>"; };
+		403EDFC3B5EEA28048C770EC83C3DDA9 /* Pods-naver-login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-naver-login.release.xcconfig"; sourceTree = "<group>"; };
+		40401B595498FE529632752924380808 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		40F7E1795A618863C2651751A42CA71F /* Pods-naver-login-naver-loginUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-naver-login-naver-loginUITests-umbrella.h"; sourceTree = "<group>"; };
+		4AC3BDF2A62DDF0B45B72CDEEB821AD7 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		4EFDE4FC7C8CB1E7C878A2E67E28649D /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		4F8F483766E169EF970F44AF8282A6C8 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		50209CC3716D6767DA6BAA491EDD796A /* Pods-naver-loginTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-naver-loginTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		51CD8F1C977CE1CE1952EC6FE40C9613 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		54138FC3766F7907A1066ED6EEDFCB52 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
+		593B3466A6DB629F429C3E5D130B76AD /* Pods-naver-loginTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-naver-loginTests.modulemap"; sourceTree = "<group>"; };
+		5947701C8BB79863FCDB8D99FD525BC2 /* Pods-naver-loginTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-naver-loginTests-umbrella.h"; sourceTree = "<group>"; };
+		5C85E8386CFAF9CAD9B4CE2AD396452E /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F4EEF5BCFCC3D8F74B39893FBBFA3F9 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		65E9E45D8FF7F4BE61C06678B8CD9CD3 /* Pods-naver-login-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-naver-login-umbrella.h"; sourceTree = "<group>"; };
+		737883E000E868E632984BFFB7D1F089 /* Pods-naver-login-naver-loginUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-naver-login-naver-loginUITests-frameworks.sh"; sourceTree = "<group>"; };
+		7D39ACD68043361624B90E44CDFA00AE /* Pods-naver-login-naver-loginUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-naver-login-naver-loginUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7ECB2C7D9C86288C3E03FA8BDF44AF28 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
+		809668C0BBBA4810EB4C60ED4C6AF4AB /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
+		8258522D1FA280966E1E18D7CB24480F /* Pods-naver-login-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-naver-login-dummy.m"; sourceTree = "<group>"; };
+		84708B6C894B873D98A1DE34448EF3CE /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		8CF29B7C03B4AFC5AF59C7CD48A237AD /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		8F82DA3C4250FD0AF4AC7A2FB294F9D3 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		90AE54119E82880935F15100B603A629 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
+		90FACD584CE1AE9F385901E140561370 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
+		9323C4977A7C1F05FDE727FD41CE3610 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		94D7E7CFEDD8DF61FEB333A4C9660733 /* Pods-naver-loginTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-naver-loginTests-Info.plist"; sourceTree = "<group>"; };
+		97D36B3BC188F70E6852DBF7E5056AF0 /* Pods-naver-login-naver-loginUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-naver-login-naver-loginUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9C4BD0CA161E0A224F4CBCD0F2F1DE4C /* Pods-naver-login-naver-loginUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-naver-login-naver-loginUITests-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E082E52B7BA8276FC7A870DBF831D5C /* Pods-naver-login-naver-loginUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-naver-login-naver-loginUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A10C7D444D8E4BBD0263EF97E246CB87 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		A1699E76A5A5B752FE46F77BCCBA7D0C /* Pods-naver-loginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-naver-loginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A53F2E9E3CAC35F50396CF354324CB13 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		B19A5132581E9187B59C500E0E27EE14 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		B47D029C2FE956DC17DE5ED09C2C3622 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		B65A589FBEA2A946B0B0B88F91A879F3 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		B88073306B68F7F6EE3EFB6920E4D287 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
+		BA04E02F3CF9FAA42754CC6E9595D1BD /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
+		BF8FC6E48C9B39BBFC2208CA4AB8D55C /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
+		C005C4AA19FF494D798FB230BD1A3DBE /* naveridlogin-sdk-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "naveridlogin-sdk-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		C2488D8AF22EB5AD6BEA5380FCF4694E /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
+		C326926B4709CDCFD4F116975B556073 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
+		C3551FDDB5DABCF2A9FD7AAB1AB5ADF5 /* Pods_naver_login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_naver_login.framework; path = "Pods-naver-login.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5A297571998D73CDB3A8F40853377CA /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		CB9AC49BB7DB9858A48D917C7C65E766 /* Pods-naver-login-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-naver-login-Info.plist"; sourceTree = "<group>"; };
+		CE630FA38555A75D9AF969CCBE01952E /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
+		CFE8CA0304ED4C70EBF6B03D45BEF155 /* Pods-naver-login-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-naver-login-frameworks.sh"; sourceTree = "<group>"; };
+		D28FF340AF2208FF0EBA0E52C896CB88 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
+		D5549C8E7B7635DD9405F990B20F0D08 /* NaverThirdPartyLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NaverThirdPartyLogin.framework; sourceTree = "<group>"; };
+		DA16BDD454D4D4F1152D5409BF85C85B /* Pods-naver-loginTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-naver-loginTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E2DADBAE028050877814415787D98100 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		E3170791FED02D8D1C58B35A265F5384 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		EFFD27A7B81BC5F224A1DCCB4CB0A500 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19AEA81FC65BED8E8F123E70952D0555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F618CB00CA1FB00619BBDC5CB03B100F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		722E999F988808308D0E0A911616C451 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97745E5860D673FD1780D9640D40061F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9590D3FE7A79CD7CBEE3F346E8C19D4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A738C2A39C0150BBA7EA5EC19B95F03E /* CFNetwork.framework in Frameworks */,
+				F6B16DC8CADA07287C6A372AC8AD787C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A022DF89AFC0BADDAD344944EE7351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA3DD39551C4EA86DE5637F51898C033 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E34DCC8E2CF86B8D72232914781A840D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D5AB4DFDBCA035FFFCB063DDA1AE9B6 /* Pods-naver-login-naver-loginUITests */ = {
+			isa = PBXGroup;
+			children = (
+				27F5167C8638D911CEF4AAAB86F6D237 /* Pods-naver-login-naver-loginUITests.modulemap */,
+				7D39ACD68043361624B90E44CDFA00AE /* Pods-naver-login-naver-loginUITests-acknowledgements.markdown */,
+				97D36B3BC188F70E6852DBF7E5056AF0 /* Pods-naver-login-naver-loginUITests-acknowledgements.plist */,
+				328C908CADB687CB3E4D46B5643F4D37 /* Pods-naver-login-naver-loginUITests-dummy.m */,
+				737883E000E868E632984BFFB7D1F089 /* Pods-naver-login-naver-loginUITests-frameworks.sh */,
+				9C4BD0CA161E0A224F4CBCD0F2F1DE4C /* Pods-naver-login-naver-loginUITests-Info.plist */,
+				40F7E1795A618863C2651751A42CA71F /* Pods-naver-login-naver-loginUITests-umbrella.h */,
+				9E082E52B7BA8276FC7A870DBF831D5C /* Pods-naver-login-naver-loginUITests.debug.xcconfig */,
+				1352B88098B2E91D029DF771F0532B2C /* Pods-naver-login-naver-loginUITests.release.xcconfig */,
+			);
+			name = "Pods-naver-login-naver-loginUITests";
+			path = "Target Support Files/Pods-naver-login-naver-loginUITests";
+			sourceTree = "<group>";
+		};
+		4E6797399E79218B85A912D9F66BC71F /* Pods-naver-login */ = {
+			isa = PBXGroup;
+			children = (
+				1FFC911775D0BDB52DE0623D07FB8028 /* Pods-naver-login.modulemap */,
+				0A54F4998B9F843B4F2731ABEB4A86F7 /* Pods-naver-login-acknowledgements.markdown */,
+				372C38A4CC28A3EE917CF980AC4B49EB /* Pods-naver-login-acknowledgements.plist */,
+				8258522D1FA280966E1E18D7CB24480F /* Pods-naver-login-dummy.m */,
+				CFE8CA0304ED4C70EBF6B03D45BEF155 /* Pods-naver-login-frameworks.sh */,
+				CB9AC49BB7DB9858A48D917C7C65E766 /* Pods-naver-login-Info.plist */,
+				65E9E45D8FF7F4BE61C06678B8CD9CD3 /* Pods-naver-login-umbrella.h */,
+				1C5098D706CEBA8445DA6A9F3C8AB26D /* Pods-naver-login.debug.xcconfig */,
+				403EDFC3B5EEA28048C770EC83C3DDA9 /* Pods-naver-login.release.xcconfig */,
+			);
+			name = "Pods-naver-login";
+			path = "Target Support Files/Pods-naver-login";
+			sourceTree = "<group>";
+		};
+		6372846C60C244F56112E77EA399D7D1 /* Pods-naver-loginTests */ = {
+			isa = PBXGroup;
+			children = (
+				593B3466A6DB629F429C3E5D130B76AD /* Pods-naver-loginTests.modulemap */,
+				DA16BDD454D4D4F1152D5409BF85C85B /* Pods-naver-loginTests-acknowledgements.markdown */,
+				50209CC3716D6767DA6BAA491EDD796A /* Pods-naver-loginTests-acknowledgements.plist */,
+				224CDEB10E7400C62D680990F8B18CDD /* Pods-naver-loginTests-dummy.m */,
+				94D7E7CFEDD8DF61FEB333A4C9660733 /* Pods-naver-loginTests-Info.plist */,
+				5947701C8BB79863FCDB8D99FD525BC2 /* Pods-naver-loginTests-umbrella.h */,
+				A1699E76A5A5B752FE46F77BCCBA7D0C /* Pods-naver-loginTests.debug.xcconfig */,
+				02E4D70C6E66545A6E0F9D6C2A045C8B /* Pods-naver-loginTests.release.xcconfig */,
+			);
+			name = "Pods-naver-loginTests";
+			path = "Target Support Files/Pods-naver-loginTests";
+			sourceTree = "<group>";
+		};
+		65435DE7B2110C6A4022D753AFBFC582 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C005C4AA19FF494D798FB230BD1A3DBE /* naveridlogin-sdk-ios.debug.xcconfig */,
+				3E5126E763F4F78608382E08656C1855 /* naveridlogin-sdk-ios.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/naveridlogin-sdk-ios";
+			sourceTree = "<group>";
+		};
+		68B7115B31A0AF4A04B4529E854FCEC8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				340D49244262A065D6C45089A1BF3996 /* Alamofire.modulemap */,
+				4F8F483766E169EF970F44AF8282A6C8 /* Alamofire-dummy.m */,
+				C5A297571998D73CDB3A8F40853377CA /* Alamofire-Info.plist */,
+				A53F2E9E3CAC35F50396CF354324CB13 /* Alamofire-prefix.pch */,
+				40401B595498FE529632752924380808 /* Alamofire-umbrella.h */,
+				7ECB2C7D9C86288C3E03FA8BDF44AF28 /* Alamofire.debug.xcconfig */,
+				D28FF340AF2208FF0EBA0E52C896CB88 /* Alamofire.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		8B0F2D84AA6CCB1F5153E5AFAA651BE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
+				C3551FDDB5DABCF2A9FD7AAB1AB5ADF5 /* Pods_naver_login.framework */,
+				20CB6F9CECE93520E866E56878D9BEB6 /* Pods_naver_login_naver_loginUITests.framework */,
+				076B1B182992283F7B6D26BBC84CF22A /* Pods_naver_loginTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B7BF783F9601E3528F447B479A88AC4 /* naveridlogin-sdk-ios */ = {
+			isa = PBXGroup;
+			children = (
+				DDE0AAD5C242141B8D2BD49BA8E79BC7 /* Frameworks */,
+				65435DE7B2110C6A4022D753AFBFC582 /* Support Files */,
+			);
+			name = "naveridlogin-sdk-ios";
+			path = "naveridlogin-sdk-ios";
+			sourceTree = "<group>";
+		};
+		C029519D5B0299A9BE9AA7357AEC2D4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D78ACA5F1B3D434E48388616812CA868 /* Alamofire */,
+				9B7BF783F9601E3528F447B479A88AC4 /* naveridlogin-sdk-ios */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE45DB8EEAA313266B79F23966767078 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E6797399E79218B85A912D9F66BC71F /* Pods-naver-login */,
+				2D5AB4DFDBCA035FFFCB063DDA1AE9B6 /* Pods-naver-login-naver-loginUITests */,
+				6372846C60C244F56112E77EA399D7D1 /* Pods-naver-loginTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				C029519D5B0299A9BE9AA7357AEC2D4D /* Pods */,
+				8B0F2D84AA6CCB1F5153E5AFAA651BE3 /* Products */,
+				CE45DB8EEAA313266B79F23966767078 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D78ACA5F1B3D434E48388616812CA868 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				8F82DA3C4250FD0AF4AC7A2FB294F9D3 /* AFError.swift */,
+				387F3334ED0E3164A958A7A26B49EDF7 /* Alamofire.swift */,
+				54138FC3766F7907A1066ED6EEDFCB52 /* AlamofireExtended.swift */,
+				2CFC9F8CDDCB92EA67E356B6D56F0EED /* AuthenticationInterceptor.swift */,
+				A10C7D444D8E4BBD0263EF97E246CB87 /* CachedResponseHandler.swift */,
+				809668C0BBBA4810EB4C60ED4C6AF4AB /* Combine.swift */,
+				4EFDE4FC7C8CB1E7C878A2E67E28649D /* DispatchQueue+Alamofire.swift */,
+				C2488D8AF22EB5AD6BEA5380FCF4694E /* EventMonitor.swift */,
+				5C85E8386CFAF9CAD9B4CE2AD396452E /* HTTPHeaders.swift */,
+				90AE54119E82880935F15100B603A629 /* HTTPMethod.swift */,
+				079B12A885A139C5DB7190F54755449B /* MultipartFormData.swift */,
+				84708B6C894B873D98A1DE34448EF3CE /* MultipartUpload.swift */,
+				5F4EEF5BCFCC3D8F74B39893FBBFA3F9 /* NetworkReachabilityManager.swift */,
+				2F8E16E16E7D891A431941CDD6E5E235 /* Notifications.swift */,
+				B65A589FBEA2A946B0B0B88F91A879F3 /* OperationQueue+Alamofire.swift */,
+				90FACD584CE1AE9F385901E140561370 /* ParameterEncoder.swift */,
+				8CF29B7C03B4AFC5AF59C7CD48A237AD /* ParameterEncoding.swift */,
+				C326926B4709CDCFD4F116975B556073 /* Protected.swift */,
+				B88073306B68F7F6EE3EFB6920E4D287 /* RedirectHandler.swift */,
+				E2DADBAE028050877814415787D98100 /* Request.swift */,
+				BA04E02F3CF9FAA42754CC6E9595D1BD /* RequestInterceptor.swift */,
+				EFFD27A7B81BC5F224A1DCCB4CB0A500 /* RequestTaskMap.swift */,
+				0AD57D4BC96B96C3533461F4C31739B7 /* Response.swift */,
+				1BC5FF8A24641342CC1E6998DF862D6E /* ResponseSerialization.swift */,
+				08ABAB7A6D62F8F1ADB96503AEBB0C17 /* Result+Alamofire.swift */,
+				BF8FC6E48C9B39BBFC2208CA4AB8D55C /* RetryPolicy.swift */,
+				4AC3BDF2A62DDF0B45B72CDEEB821AD7 /* ServerTrustEvaluation.swift */,
+				51CD8F1C977CE1CE1952EC6FE40C9613 /* Session.swift */,
+				B47D029C2FE956DC17DE5ED09C2C3622 /* SessionDelegate.swift */,
+				B19A5132581E9187B59C500E0E27EE14 /* StringEncoding+Alamofire.swift */,
+				9323C4977A7C1F05FDE727FD41CE3610 /* URLConvertible+URLRequestConvertible.swift */,
+				CE630FA38555A75D9AF969CCBE01952E /* URLEncodedFormEncoder.swift */,
+				E3170791FED02D8D1C58B35A265F5384 /* URLRequest+Alamofire.swift */,
+				156B0BD886C32C2CCCF48B834D08AA31 /* URLSessionConfiguration+Alamofire.swift */,
+				16F88B3E1C1CA15A727DE8F1F8CB3692 /* Validation.swift */,
+				68B7115B31A0AF4A04B4529E854FCEC8 /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		DDE0AAD5C242141B8D2BD49BA8E79BC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5549C8E7B7635DD9405F990B20F0D08 /* NaverThirdPartyLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E34DCC8E2CF86B8D72232914781A840D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */,
+				222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7550864F6443230FA4D4C123367CF578 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1781688270109378DFDED8232C424963 /* Pods-naver-login-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8070B01910C64B9AFD0DB550EDE38D6B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3DD4A8BB36733BA15868F7FB8C56CE /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8439816C8D86AA723AA9C8391F75CA27 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2DE654524C9FF0E37CF5F07F1E16F80 /* Pods-naver-login-naver-loginUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E2964BD84F1880B9A25B2B0F1C8B5E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				137CB587E81DA03F81185CCA4B6C9EFD /* Pods-naver-loginTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		15A76D7A7715CCF2B883C690D7767D79 /* Pods-naver-login-naver-loginUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD9A96F67ACCDC0460BAF14593BC753 /* Build configuration list for PBXNativeTarget "Pods-naver-login-naver-loginUITests" */;
+			buildPhases = (
+				8439816C8D86AA723AA9C8391F75CA27 /* Headers */,
+				9A339DA25E3502383306E9868BE9700C /* Sources */,
+				D2A022DF89AFC0BADDAD344944EE7351 /* Frameworks */,
+				41A2991C6FF9F584EC27F78AEB4FC0EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7337D5582D3FA70FE5D369D7F1474A9F /* PBXTargetDependency */,
+				90E797D6B9C4AB1D4A8BF1132C73042A /* PBXTargetDependency */,
+			);
+			name = "Pods-naver-login-naver-loginUITests";
+			productName = "Pods-naver-login-naver-loginUITests";
+			productReference = 20CB6F9CECE93520E866E56878D9BEB6 /* Pods_naver_login_naver_loginUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1F49861BCF720E8D734606588C6C42D3 /* Pods-naver-loginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 821E7AEB5B5E9ACE880845CD153EE97A /* Build configuration list for PBXNativeTarget "Pods-naver-loginTests" */;
+			buildPhases = (
+				8E2964BD84F1880B9A25B2B0F1C8B5E8 /* Headers */,
+				812DEDD250C57BA033BA2287CC0B4A55 /* Sources */,
+				19AEA81FC65BED8E8F123E70952D0555 /* Frameworks */,
+				E601641318ED3CA256EF1D3B770386DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8968F94EA47E7BAD70A408F09083224E /* PBXTargetDependency */,
+			);
+			name = "Pods-naver-loginTests";
+			productName = "Pods-naver-loginTests";
+			productReference = 076B1B182992283F7B6D26BBC84CF22A /* Pods_naver_loginTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5450FA4AD7786D01278988BFE4DBA497 /* Pods-naver-login */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C392174AB289B2164C26371B9076580 /* Build configuration list for PBXNativeTarget "Pods-naver-login" */;
+			buildPhases = (
+				7550864F6443230FA4D4C123367CF578 /* Headers */,
+				A0F32B3F4BE70BE3A6CB7E2584FD8CF8 /* Sources */,
+				722E999F988808308D0E0A911616C451 /* Frameworks */,
+				3C7A003213177CA36A002EAAFDB720CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EC9C631528311E8612B90580D1BEFCC /* PBXTargetDependency */,
+				CF80F5D42B7D176B44C7D2514428B561 /* PBXTargetDependency */,
+			);
+			name = "Pods-naver-login";
+			productName = "Pods-naver-login";
+			productReference = C3551FDDB5DABCF2A9FD7AAB1AB5ADF5 /* Pods_naver_login.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E219AC01CD5AFED663C9AB28280801 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				8070B01910C64B9AFD0DB550EDE38D6B /* Headers */,
+				2C8326877F6A9617C2FBE9BD15D95B59 /* Sources */,
+				9590D3FE7A79CD7CBEE3F346E8C19D4D /* Frameworks */,
+				9BCA7D105D531AE5DAF34FB86A2E623A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8B0F2D84AA6CCB1F5153E5AFAA651BE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
+				3516E9D4735D155BC036A4DB393966FC /* naveridlogin-sdk-ios */,
+				5450FA4AD7786D01278988BFE4DBA497 /* Pods-naver-login */,
+				15A76D7A7715CCF2B883C690D7767D79 /* Pods-naver-login-naver-loginUITests */,
+				1F49861BCF720E8D734606588C6C42D3 /* Pods-naver-loginTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C7A003213177CA36A002EAAFDB720CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41A2991C6FF9F584EC27F78AEB4FC0EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BCA7D105D531AE5DAF34FB86A2E623A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E601641318ED3CA256EF1D3B770386DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C8326877F6A9617C2FBE9BD15D95B59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1208E81DA8B532D0646D627B50290EB6 /* AFError.swift in Sources */,
+				C6D5A4B4028B2C43380C9FA58BD5C8CA /* Alamofire-dummy.m in Sources */,
+				C1F1DB6A9CBDE584D09BA1613AAD4F9D /* Alamofire.swift in Sources */,
+				72EC2712926E6D28B52360D9AC41668F /* AlamofireExtended.swift in Sources */,
+				DC627AFC5B585686898B014184AFCABD /* AuthenticationInterceptor.swift in Sources */,
+				ABA85887A41495358C83CE3F3030EDEA /* CachedResponseHandler.swift in Sources */,
+				0A1849775CF90D514963187D3A771CF8 /* Combine.swift in Sources */,
+				27E59A11A2743B0595CDE3A08675EAE1 /* DispatchQueue+Alamofire.swift in Sources */,
+				6546D728B69398F93B506845141EBD61 /* EventMonitor.swift in Sources */,
+				91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */,
+				013BAC24F7AC722E59517CB110A9E685 /* HTTPMethod.swift in Sources */,
+				45B8CC1C61E7A0BB28CFA8CE7C12FEBC /* MultipartFormData.swift in Sources */,
+				D03F1F02DE8606E6057D57866611BEBF /* MultipartUpload.swift in Sources */,
+				19D605A3233499828FB6B790869F3E9C /* NetworkReachabilityManager.swift in Sources */,
+				8AA937910F87915DE700CAB6C868689E /* Notifications.swift in Sources */,
+				0A900DF17E3B64F08AF673E9A0DDD697 /* OperationQueue+Alamofire.swift in Sources */,
+				4AEC050FA7D5ED52FDA9DF50EA3560DF /* ParameterEncoder.swift in Sources */,
+				D14066FAE94E304798E43651E5886D13 /* ParameterEncoding.swift in Sources */,
+				218C14EAE5AA31C30314AE0289B732A0 /* Protected.swift in Sources */,
+				666EC5C8356E6D4448A2FE7BEE77AD88 /* RedirectHandler.swift in Sources */,
+				EDC93BD7B9262119AE145E4C7A9D0212 /* Request.swift in Sources */,
+				6E54F64E8DA73F4B0B46C216F9F93F63 /* RequestInterceptor.swift in Sources */,
+				6C08F6A77889651626583100F560153D /* RequestTaskMap.swift in Sources */,
+				C1C5B050B55C15103ABC81769551A283 /* Response.swift in Sources */,
+				911448B2EDA2FF880108F77642797A88 /* ResponseSerialization.swift in Sources */,
+				66B26C6CAE737EC21F4BA1F1851B69C5 /* Result+Alamofire.swift in Sources */,
+				9FED70D1E1FBFB80E974E999EF732258 /* RetryPolicy.swift in Sources */,
+				47FDBBBD2704901588C3A7C56BBC502D /* ServerTrustEvaluation.swift in Sources */,
+				6AE407A4FB6C3D6ADD862CC6E3067A17 /* Session.swift in Sources */,
+				381FF05F8B4F611EE9C2FDBE4457BB89 /* SessionDelegate.swift in Sources */,
+				212EDC48B68107BEA9247F3464CE696E /* StringEncoding+Alamofire.swift in Sources */,
+				9B1D8A7798D8A6F518FC9AF9725431D0 /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				D31FC7FDD450C4CDD633ECBAD27C6221 /* URLEncodedFormEncoder.swift in Sources */,
+				D5EAAFB6FAD77A8F0699345149BA3CBB /* URLRequest+Alamofire.swift in Sources */,
+				F70EF854395CDE981A8336E4FF0310FE /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				F0F3224FF592F9BA2A044A2FC2BD4CCD /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		812DEDD250C57BA033BA2287CC0B4A55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C50F35C7E1BB8A13A492B2077656B2 /* Pods-naver-loginTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A339DA25E3502383306E9868BE9700C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BAEE339D40646C28E31ACC04F309655 /* Pods-naver-login-naver-loginUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0F32B3F4BE70BE3A6CB7E2584FD8CF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8F4CAB164427E5F463793FD0B584547 /* Pods-naver-login-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EC9C631528311E8612B90580D1BEFCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = CACB025AED89FC3E96CF0231DA3B3A1B /* PBXContainerItemProxy */;
+		};
+		7337D5582D3FA70FE5D369D7F1474A9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 3C34C20057368907D46C12F933B4A874 /* PBXContainerItemProxy */;
+		};
+		8968F94EA47E7BAD70A408F09083224E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-naver-login";
+			target = 5450FA4AD7786D01278988BFE4DBA497 /* Pods-naver-login */;
+			targetProxy = 50A4F7DC6CBA526DCD7E6752E7D3649B /* PBXContainerItemProxy */;
+		};
+		90E797D6B9C4AB1D4A8BF1132C73042A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "naveridlogin-sdk-ios";
+			target = 3516E9D4735D155BC036A4DB393966FC /* naveridlogin-sdk-ios */;
+			targetProxy = 2229B90B085D5A541AB50EFC348DB78D /* PBXContainerItemProxy */;
+		};
+		CF80F5D42B7D176B44C7D2514428B561 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "naveridlogin-sdk-ios";
+			target = 3516E9D4735D155BC036A4DB393966FC /* naveridlogin-sdk-ios */;
+			targetProxy = 8A5CA23858DAC83B966156B4A294BC21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		49159435A28F381564CAC0B52AD7132F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E5126E763F4F78608382E08656C1855 /* naveridlogin-sdk-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D28FA133CBB802E6EB6210E69C92A76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E082E52B7BA8276FC7A870DBF831D5C /* Pods-naver-login-naver-loginUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-naver-login-naver-loginUITests/Pods-naver-login-naver-loginUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-naver-login-naver-loginUITests/Pods-naver-login-naver-loginUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		68070A9DAF95E8B15C55EF523DF64085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 403EDFC3B5EEA28048C770EC83C3DDA9 /* Pods-naver-login.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-naver-login/Pods-naver-login-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-naver-login/Pods-naver-login.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7A56889C186487D8CF54C3336F1842E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02E4D70C6E66545A6E0F9D6C2A045C8B /* Pods-naver-loginTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-naver-loginTests/Pods-naver-loginTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-naver-loginTests/Pods-naver-loginTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		830BBAC0BFB5FA89C22EF4F81B5B1940 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C5098D706CEBA8445DA6A9F3C8AB26D /* Pods-naver-login.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-naver-login/Pods-naver-login-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-naver-login/Pods-naver-login.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B59A43BEA26997937796AE37175C6B0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ECB2C7D9C86288C3E03FA8BDF44AF28 /* Alamofire.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C245DEE4895201E0777E2CE85D3B7233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1699E76A5A5B752FE46F77BCCBA7D0C /* Pods-naver-loginTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-naver-loginTests/Pods-naver-loginTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-naver-loginTests/Pods-naver-loginTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F51DAAA511BD47B058880847A3C2293E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D28FF340AF2208FF0EBA0E52C896CB88 /* Alamofire.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FA70A80237716C196F58FE57B84BD054 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1352B88098B2E91D029DF771F0532B2C /* Pods-naver-login-naver-loginUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-naver-login-naver-loginUITests/Pods-naver-login-naver-loginUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-naver-login-naver-loginUITests/Pods-naver-login-naver-loginUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FED8C5FCD7FE6805D1ADCCE077185524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C005C4AA19FF494D798FB230BD1A3DBE /* naveridlogin-sdk-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C86B7F394788F8E6171908E62DD5DAF /* Build configuration list for PBXAggregateTarget "naveridlogin-sdk-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED8C5FCD7FE6805D1ADCCE077185524 /* Debug */,
+				49159435A28F381564CAC0B52AD7132F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E219AC01CD5AFED663C9AB28280801 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B59A43BEA26997937796AE37175C6B0D /* Debug */,
+				F51DAAA511BD47B058880847A3C2293E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		821E7AEB5B5E9ACE880845CD153EE97A /* Build configuration list for PBXNativeTarget "Pods-naver-loginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C245DEE4895201E0777E2CE85D3B7233 /* Debug */,
+				7A56889C186487D8CF54C3336F1842E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C392174AB289B2164C26371B9076580 /* Build configuration list for PBXNativeTarget "Pods-naver-login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830BBAC0BFB5FA89C22EF4F81B5B1940 /* Debug */,
+				68070A9DAF95E8B15C55EF523DF64085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD9A96F67ACCDC0460BAF14593BC753 /* Build configuration list for PBXNativeTarget "Pods-naver-login-naver-loginUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D28FA133CBB802E6EB6210E69C92A76 /* Debug */,
+				FA70A80237716C196F58FE57B84BD054 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

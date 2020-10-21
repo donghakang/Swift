@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAFD3E96253FFB43002301A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFD3E95253FFB43002301A3 /* AppDelegate.swift */; };
+		CAFD3E98253FFB43002301A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFD3E97253FFB43002301A3 /* SceneDelegate.swift */; };
+		CAFD3E9A253FFB43002301A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFD3E99253FFB43002301A3 /* ViewController.swift */; };
+		CAFD3E9D253FFB43002301A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAFD3E9B253FFB43002301A3 /* Main.storyboard */; };
+		CAFD3E9F253FFB45002301A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAFD3E9E253FFB45002301A3 /* Assets.xcassets */; };
+		CAFD3EA2253FFB45002301A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAFD3EA0253FFB45002301A3 /* LaunchScreen.storyboard */; };
+		CAFD3EAD253FFB45002301A3 /* QR_CheckinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFD3EAC253FFB45002301A3 /* QR_CheckinTests.swift */; };
+		CAFD3EB8253FFB45002301A3 /* QR_CheckinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFD3EB7253FFB45002301A3 /* QR_CheckinUITests.swift */; };
+		CAFD3ED2253FFB79002301A3 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFD3ED1253FFB79002301A3 /* WidgetKit.framework */; };
+		CAFD3ED4253FFB79002301A3 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFD3ED3253FFB79002301A3 /* SwiftUI.framework */; };
+		CAFD3ED7253FFB79002301A3 /* QRWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFD3ED6253FFB79002301A3 /* QRWidget.swift */; };
+		CAFD3EDA253FFB7B002301A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAFD3ED9253FFB7B002301A3 /* Assets.xcassets */; };
+		CAFD3EDC253FFB7B002301A3 /* QRWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CAFD3ED8253FFB79002301A3 /* QRWidget.intentdefinition */; };
+		CAFD3EDD253FFB7B002301A3 /* QRWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CAFD3ED8253FFB79002301A3 /* QRWidget.intentdefinition */; };
+		CAFD3EE0253FFB7B002301A3 /* QRWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CAFD3ECF253FFB79002301A3 /* QRWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAFD3EA9253FFB45002301A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAFD3E8A253FFB43002301A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAFD3E91253FFB43002301A3;
+			remoteInfo = "QR Checkin";
+		};
+		CAFD3EB4253FFB45002301A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAFD3E8A253FFB43002301A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAFD3E91253FFB43002301A3;
+			remoteInfo = "QR Checkin";
+		};
+		CAFD3EDE253FFB7B002301A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAFD3E8A253FFB43002301A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAFD3ECE253FFB79002301A3;
+			remoteInfo = QRWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CAFD3EE4253FFB7B002301A3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CAFD3EE0253FFB7B002301A3 /* QRWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CAFD3E92253FFB43002301A3 /* QR Checkin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QR Checkin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAFD3E95253FFB43002301A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CAFD3E97253FFB43002301A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CAFD3E99253FFB43002301A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CAFD3E9C253FFB43002301A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAFD3E9E253FFB45002301A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAFD3EA1253FFB45002301A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CAFD3EA3253FFB45002301A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAFD3EA8253FFB45002301A3 /* QR CheckinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QR CheckinTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAFD3EAC253FFB45002301A3 /* QR_CheckinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QR_CheckinTests.swift; sourceTree = "<group>"; };
+		CAFD3EAE253FFB45002301A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAFD3EB3253FFB45002301A3 /* QR CheckinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QR CheckinUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAFD3EB7253FFB45002301A3 /* QR_CheckinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QR_CheckinUITests.swift; sourceTree = "<group>"; };
+		CAFD3EB9253FFB45002301A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAFD3ECF253FFB79002301A3 /* QRWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QRWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAFD3ED1253FFB79002301A3 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CAFD3ED3253FFB79002301A3 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CAFD3ED6253FFB79002301A3 /* QRWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRWidget.swift; sourceTree = "<group>"; };
+		CAFD3ED8253FFB79002301A3 /* QRWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = QRWidget.intentdefinition; sourceTree = "<group>"; };
+		CAFD3ED9253FFB7B002301A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAFD3EDB253FFB7B002301A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAFD3E8F253FFB43002301A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFD3EA5253FFB45002301A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFD3EB0253FFB45002301A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFD3ECC253FFB79002301A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFD3ED4253FFB79002301A3 /* SwiftUI.framework in Frameworks */,
+				CAFD3ED2253FFB79002301A3 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAFD3E89253FFB43002301A3 = {
+			isa = PBXGroup;
+			children = (
+				CAFD3E94253FFB43002301A3 /* QR Checkin */,
+				CAFD3EAB253FFB45002301A3 /* QR CheckinTests */,
+				CAFD3EB6253FFB45002301A3 /* QR CheckinUITests */,
+				CAFD3ED5253FFB79002301A3 /* QRWidget */,
+				CAFD3ED0253FFB79002301A3 /* Frameworks */,
+				CAFD3E93253FFB43002301A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAFD3E93253FFB43002301A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAFD3E92253FFB43002301A3 /* QR Checkin.app */,
+				CAFD3EA8253FFB45002301A3 /* QR CheckinTests.xctest */,
+				CAFD3EB3253FFB45002301A3 /* QR CheckinUITests.xctest */,
+				CAFD3ECF253FFB79002301A3 /* QRWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAFD3E94253FFB43002301A3 /* QR Checkin */ = {
+			isa = PBXGroup;
+			children = (
+				CAFD3E95253FFB43002301A3 /* AppDelegate.swift */,
+				CAFD3E97253FFB43002301A3 /* SceneDelegate.swift */,
+				CAFD3E99253FFB43002301A3 /* ViewController.swift */,
+				CAFD3E9B253FFB43002301A3 /* Main.storyboard */,
+				CAFD3E9E253FFB45002301A3 /* Assets.xcassets */,
+				CAFD3EA0253FFB45002301A3 /* LaunchScreen.storyboard */,
+				CAFD3EA3253FFB45002301A3 /* Info.plist */,
+			);
+			path = "QR Checkin";
+			sourceTree = "<group>";
+		};
+		CAFD3EAB253FFB45002301A3 /* QR CheckinTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAFD3EAC253FFB45002301A3 /* QR_CheckinTests.swift */,
+				CAFD3EAE253FFB45002301A3 /* Info.plist */,
+			);
+			path = "QR CheckinTests";
+			sourceTree = "<group>";
+		};
+		CAFD3EB6253FFB45002301A3 /* QR CheckinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CAFD3EB7253FFB45002301A3 /* QR_CheckinUITests.swift */,
+				CAFD3EB9253FFB45002301A3 /* Info.plist */,
+			);
+			path = "QR CheckinUITests";
+			sourceTree = "<group>";
+		};
+		CAFD3ED0253FFB79002301A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAFD3ED1253FFB79002301A3 /* WidgetKit.framework */,
+				CAFD3ED3253FFB79002301A3 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAFD3ED5253FFB79002301A3 /* QRWidget */ = {
+			isa = PBXGroup;
+			children = (
+				CAFD3ED6253FFB79002301A3 /* QRWidget.swift */,
+				CAFD3ED8253FFB79002301A3 /* QRWidget.intentdefinition */,
+				CAFD3ED9253FFB7B002301A3 /* Assets.xcassets */,
+				CAFD3EDB253FFB7B002301A3 /* Info.plist */,
+			);
+			path = QRWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAFD3E91253FFB43002301A3 /* QR Checkin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAFD3EBC253FFB45002301A3 /* Build configuration list for PBXNativeTarget "QR Checkin" */;
+			buildPhases = (
+				CAFD3E8E253FFB43002301A3 /* Sources */,
+				CAFD3E8F253FFB43002301A3 /* Frameworks */,
+				CAFD3E90253FFB43002301A3 /* Resources */,
+				CAFD3EE4253FFB7B002301A3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAFD3EDF253FFB7B002301A3 /* PBXTargetDependency */,
+			);
+			name = "QR Checkin";
+			productName = "QR Checkin";
+			productReference = CAFD3E92253FFB43002301A3 /* QR Checkin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAFD3EA7253FFB45002301A3 /* QR CheckinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAFD3EBF253FFB45002301A3 /* Build configuration list for PBXNativeTarget "QR CheckinTests" */;
+			buildPhases = (
+				CAFD3EA4253FFB45002301A3 /* Sources */,
+				CAFD3EA5253FFB45002301A3 /* Frameworks */,
+				CAFD3EA6253FFB45002301A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAFD3EAA253FFB45002301A3 /* PBXTargetDependency */,
+			);
+			name = "QR CheckinTests";
+			productName = "QR CheckinTests";
+			productReference = CAFD3EA8253FFB45002301A3 /* QR CheckinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CAFD3EB2253FFB45002301A3 /* QR CheckinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAFD3EC2253FFB45002301A3 /* Build configuration list for PBXNativeTarget "QR CheckinUITests" */;
+			buildPhases = (
+				CAFD3EAF253FFB45002301A3 /* Sources */,
+				CAFD3EB0253FFB45002301A3 /* Frameworks */,
+				CAFD3EB1253FFB45002301A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAFD3EB5253FFB45002301A3 /* PBXTargetDependency */,
+			);
+			name = "QR CheckinUITests";
+			productName = "QR CheckinUITests";
+			productReference = CAFD3EB3253FFB45002301A3 /* QR CheckinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CAFD3ECE253FFB79002301A3 /* QRWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAFD3EE1253FFB7B002301A3 /* Build configuration list for PBXNativeTarget "QRWidgetExtension" */;
+			buildPhases = (
+				CAFD3ECB253FFB79002301A3 /* Sources */,
+				CAFD3ECC253FFB79002301A3 /* Frameworks */,
+				CAFD3ECD253FFB79002301A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRWidgetExtension;
+			productName = QRWidgetExtension;
+			productReference = CAFD3ECF253FFB79002301A3 /* QRWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAFD3E8A253FFB43002301A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					CAFD3E91253FFB43002301A3 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					CAFD3EA7253FFB45002301A3 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = CAFD3E91253FFB43002301A3;
+					};
+					CAFD3EB2253FFB45002301A3 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = CAFD3E91253FFB43002301A3;
+					};
+					CAFD3ECE253FFB79002301A3 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = CAFD3E8D253FFB43002301A3 /* Build configuration list for PBXProject "QR Checkin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAFD3E89253FFB43002301A3;
+			productRefGroup = CAFD3E93253FFB43002301A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAFD3E91253FFB43002301A3 /* QR Checkin */,
+				CAFD3EA7253FFB45002301A3 /* QR CheckinTests */,
+				CAFD3EB2253FFB45002301A3 /* QR CheckinUITests */,
+				CAFD3ECE253FFB79002301A3 /* QRWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAFD3E90253FFB43002301A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFD3EA2253FFB45002301A3 /* LaunchScreen.storyboard in Resources */,
+				CAFD3E9F253FFB45002301A3 /* Assets.xcassets in Resources */,
+				CAFD3E9D253FFB43002301A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFD3EA6253FFB45002301A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFD3EB1253FFB45002301A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFD3ECD253FFB79002301A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFD3EDA253FFB7B002301A3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAFD3E8E253FFB43002301A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFD3E9A253FFB43002301A3 /* ViewController.swift in Sources */,
+				CAFD3EDD253FFB7B002301A3 /* QRWidget.intentdefinition in Sources */,
+				CAFD3E96253FFB43002301A3 /* AppDelegate.swift in Sources */,
+				CAFD3E98253FFB43002301A3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFD3EA4253FFB45002301A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFD3EAD253FFB45002301A3 /* QR_CheckinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFD3EAF253FFB45002301A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFD3EB8253FFB45002301A3 /* QR_CheckinUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFD3ECB253FFB79002301A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFD3ED7253FFB79002301A3 /* QRWidget.swift in Sources */,
+				CAFD3EDC253FFB7B002301A3 /* QRWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAFD3EAA253FFB45002301A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAFD3E91253FFB43002301A3 /* QR Checkin */;
+			targetProxy = CAFD3EA9253FFB45002301A3 /* PBXContainerItemProxy */;
+		};
+		CAFD3EB5253FFB45002301A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAFD3E91253FFB43002301A3 /* QR Checkin */;
+			targetProxy = CAFD3EB4253FFB45002301A3 /* PBXContainerItemProxy */;
+		};
+		CAFD3EDF253FFB7B002301A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAFD3ECE253FFB79002301A3 /* QRWidgetExtension */;
+			targetProxy = CAFD3EDE253FFB7B002301A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CAFD3E9B253FFB43002301A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAFD3E9C253FFB43002301A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAFD3EA0253FFB45002301A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAFD3EA1253FFB45002301A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAFD3EBA253FFB45002301A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAFD3EBB253FFB45002301A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAFD3EBD253FFB45002301A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K83P83C9GF;
+				INFOPLIST_FILE = "QR Checkin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.QR-Checkin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAFD3EBE253FFB45002301A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K83P83C9GF;
+				INFOPLIST_FILE = "QR Checkin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.QR-Checkin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CAFD3EC0253FFB45002301A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "QR CheckinTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.QR-CheckinTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QR Checkin.app/QR Checkin";
+			};
+			name = Debug;
+		};
+		CAFD3EC1253FFB45002301A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "QR CheckinTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.QR-CheckinTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QR Checkin.app/QR Checkin";
+			};
+			name = Release;
+		};
+		CAFD3EC3253FFB45002301A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "QR CheckinUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.QR-CheckinUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "QR Checkin";
+			};
+			name = Debug;
+		};
+		CAFD3EC4253FFB45002301A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "QR CheckinUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.QR-CheckinUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "QR Checkin";
+			};
+			name = Release;
+		};
+		CAFD3EE2253FFB7B002301A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K83P83C9GF;
+				INFOPLIST_FILE = QRWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.QR-Checkin.QRWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAFD3EE3253FFB7B002301A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K83P83C9GF;
+				INFOPLIST_FILE = QRWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donghakang.QR-Checkin.QRWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAFD3E8D253FFB43002301A3 /* Build configuration list for PBXProject "QR Checkin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAFD3EBA253FFB45002301A3 /* Debug */,
+				CAFD3EBB253FFB45002301A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAFD3EBC253FFB45002301A3 /* Build configuration list for PBXNativeTarget "QR Checkin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAFD3EBD253FFB45002301A3 /* Debug */,
+				CAFD3EBE253FFB45002301A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAFD3EBF253FFB45002301A3 /* Build configuration list for PBXNativeTarget "QR CheckinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAFD3EC0253FFB45002301A3 /* Debug */,
+				CAFD3EC1253FFB45002301A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAFD3EC2253FFB45002301A3 /* Build configuration list for PBXNativeTarget "QR CheckinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAFD3EC3253FFB45002301A3 /* Debug */,
+				CAFD3EC4253FFB45002301A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAFD3EE1253FFB7B002301A3 /* Build configuration list for PBXNativeTarget "QRWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAFD3EE2253FFB7B002301A3 /* Debug */,
+				CAFD3EE3253FFB7B002301A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAFD3E8A253FFB43002301A3 /* Project object */;
+}
