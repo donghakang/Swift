@@ -17,6 +17,9 @@
 		CA1232552537259200C2C9CF /* Core_GraphicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1232542537259200C2C9CF /* Core_GraphicUITests.swift */; };
 		CA349B84253ABD1E009C25D3 /* MovingArcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA349B83253ABD1E009C25D3 /* MovingArcViewController.swift */; };
 		CA349B89253AD044009C25D3 /* MovingArcTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA349B88253AD044009C25D3 /* MovingArcTimerViewController.swift */; };
+		CA65F26B2543DD6F006CC43F /* LineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65F26A2543DD6F006CC43F /* LineViewController.swift */; };
+		CA65F2702543DDA5006CC43F /* BezierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65F26F2543DDA5006CC43F /* BezierViewController.swift */; };
+		CA65F2752543E440006CC43F /* ShapeFillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65F2742543E440006CC43F /* ShapeFillViewController.swift */; };
 		CA71CA382537CBFF002F887B /* ArcPathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CA372537CBFF002F887B /* ArcPathViewController.swift */; };
 		CA71CA3D2537CF84002F887B /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CA3C2537CF84002F887B /* GraphViewController.swift */; };
 		CA9B7F662537279700437413 /* BoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B7F652537279700437413 /* BoxViewController.swift */; };
@@ -59,6 +62,9 @@
 		CA1232562537259200C2C9CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA349B83253ABD1E009C25D3 /* MovingArcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingArcViewController.swift; sourceTree = "<group>"; };
 		CA349B88253AD044009C25D3 /* MovingArcTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingArcTimerViewController.swift; sourceTree = "<group>"; };
+		CA65F26A2543DD6F006CC43F /* LineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
+		CA65F26F2543DDA5006CC43F /* BezierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezierViewController.swift; sourceTree = "<group>"; };
+		CA65F2742543E440006CC43F /* ShapeFillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeFillViewController.swift; sourceTree = "<group>"; };
 		CA71CA372537CBFF002F887B /* ArcPathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcPathViewController.swift; sourceTree = "<group>"; };
 		CA71CA3C2537CF84002F887B /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		CA9B7F652537279700437413 /* BoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxViewController.swift; sourceTree = "<group>"; };
@@ -126,7 +132,10 @@
 				CA71CA3C2537CF84002F887B /* GraphViewController.swift */,
 				CA349B83253ABD1E009C25D3 /* MovingArcViewController.swift */,
 				CA349B88253AD044009C25D3 /* MovingArcTimerViewController.swift */,
+				CA65F26A2543DD6F006CC43F /* LineViewController.swift */,
+				CA65F26F2543DDA5006CC43F /* BezierViewController.swift */,
 				CA1232382537258F00C2C9CF /* Main.storyboard */,
+				CA65F2742543E440006CC43F /* ShapeFillViewController.swift */,
 				CA12323B2537259100C2C9CF /* Assets.xcassets */,
 				CA12323D2537259100C2C9CF /* LaunchScreen.storyboard */,
 				CA1232402537259100C2C9CF /* Info.plist */,
@@ -284,14 +293,17 @@
 			files = (
 				CA71CA3D2537CF84002F887B /* GraphViewController.swift in Sources */,
 				CA349B84253ABD1E009C25D3 /* MovingArcViewController.swift in Sources */,
+				CA65F26B2543DD6F006CC43F /* LineViewController.swift in Sources */,
 				CA71CA382537CBFF002F887B /* ArcPathViewController.swift in Sources */,
 				CA1232372537258F00C2C9CF /* ViewController.swift in Sources */,
 				CA1232332537258F00C2C9CF /* AppDelegate.swift in Sources */,
 				CA9B7F6B2537289F00437413 /* RoundBoxViewController.swift in Sources */,
 				CA9B7F662537279700437413 /* BoxViewController.swift in Sources */,
 				CA9B7F70253729DC00437413 /* OvalViewController.swift in Sources */,
+				CA65F2752543E440006CC43F /* ShapeFillViewController.swift in Sources */,
 				CA9B7F7525372A6E00437413 /* ArcViewController.swift in Sources */,
 				CA349B89253AD044009C25D3 /* MovingArcTimerViewController.swift in Sources */,
+				CA65F2702543DDA5006CC43F /* BezierViewController.swift in Sources */,
 				CA1232352537258F00C2C9CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

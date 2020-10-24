@@ -20,7 +20,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         "부채꼴 그리기",
         "핵분율 그래프",
         "움직이는 그래프",
-        "움직이는 그래프 (타이머)"
+        "움직이는 그래프 (타이머)",
+        "선",
+        "선 (Bezier Curve)",
+        "도형 겹쳐 그리기"
     ]
     
     // table view
@@ -71,6 +74,12 @@ extension ViewController {
             performSegue(withIdentifier: "toSeventh", sender: self)
         } else if indexPath.row == 7 {
             performSegue(withIdentifier: "toEighth", sender: self)
+        } else if indexPath.row == 8 {
+            performSegue(withIdentifier: "toNineth", sender: self)
+        } else if indexPath.row == 9 {
+            performSegue(withIdentifier: "toTenth", sender: self)
+        } else if indexPath.row == 10 {
+            performSegue(withIdentifier: "toEleventh", sender: self)
         }
     }
 }
