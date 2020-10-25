@@ -17,6 +17,8 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     var session = AVCaptureSession()
     var photoOutput = AVCapturePhotoOutput()
     
+    let notification = NotificationCenter.default
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setButton()
@@ -27,6 +29,9 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         
         // 세션 시작
         session.startRunning()
+        
+        
+        notification.addObserver(self, selector: #selector(changedDeviceOrientation(_:)), name: UIDevice.orientationDidChangeNotification, object: nil)
     }
 
     @IBAction func takePhoto(_ sender: Any) {
@@ -37,6 +42,23 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         
         photoOutput.capturePhoto(with: captureSetting, delegate: self)
         
+        switch UIDevice.current.orientation {
+        case .portrait:
+            print("normal")
+            
+        case .portraitUpsideDown:
+            print("upside down")
+            
+        case .landscapeLeft:
+            print("left")
+            
+        case .landscapeRight:
+            print("right")
+            
+            
+        default:
+            break
+        }
     }
     
     
@@ -116,6 +138,29 @@ extension ViewController {
         if let data = photoData {
             if let stillImage = UIImage(data: data) {
                 UIImageWriteToSavedPhotosAlbum(stillImage, self, nil, nil)
+            }
+        }
+    }
+}
+
+extension ViewController {
+    @objc func changedDeviceOrientation(_ notification: Notification) {
+        if let photoOutputConnection = self.photoOutput.connection(with: AVMediaType.video) {
+            switch UIDevice.current.orientation {
+            case .portrait:
+                print("normal")
+                photoOutputConnection.videoOrientation = .portrait
+            case .portraitUpsideDown:
+                print("upside down")
+                photoOutputConnection.videoOrientation = .portraitUpsideDown
+            case .landscapeLeft:
+                print("left")
+                photoOutputConnection.videoOrientation = .landscapeRight
+            case .landscapeRight:
+                print("right")
+                photoOutputConnection.videoOrientation = .landscapeLeft
+            default:
+                break
             }
         }
     }

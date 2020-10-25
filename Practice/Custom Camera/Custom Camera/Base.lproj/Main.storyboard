@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mqe-HC-g6d">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dil-b6-4aJ">
                                         <rect key="frame" x="197" y="714" width="20.5" height="64"/>
@@ -39,9 +39,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mqe-HC-g6d" secondAttribute="trailing" id="1Sn-6R-Pas"/>
+                            <constraint firstItem="Mqe-HC-g6d" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Cg5-p5-Y0K"/>
                             <constraint firstItem="Mqe-HC-g6d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NmO-Gs-78u"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mqe-HC-g6d" secondAttribute="bottom" id="rQI-b5-Eiq"/>
-                            <constraint firstItem="Mqe-HC-g6d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zZA-oE-md9"/>
+                            <constraint firstAttribute="bottom" secondItem="Mqe-HC-g6d" secondAttribute="bottom" id="feH-Ar-EHL"/>
                         </constraints>
                     </view>
                     <connections>
