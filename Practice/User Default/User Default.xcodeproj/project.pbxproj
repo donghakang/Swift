@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA195D42254853620031144D /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA195D41254853620031144D /* TextViewController.swift */; };
+		CA195D47254858340031144D /* AdvTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA195D46254858340031144D /* AdvTextViewController.swift */; };
 		CA40B7AB2545B73E004ECEEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40B7AA2545B73E004ECEEE /* AppDelegate.swift */; };
 		CA40B7AD2545B73E004ECEEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40B7AC2545B73E004ECEEE /* SceneDelegate.swift */; };
 		CA40B7AF2545B73E004ECEEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA40B7AE2545B73E004ECEEE /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA195D41254853620031144D /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		CA195D46254858340031144D /* AdvTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvTextViewController.swift; sourceTree = "<group>"; };
 		CA40B7A72545B73E004ECEEE /* User Default.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "User Default.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA40B7AA2545B73E004ECEEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA40B7AC2545B73E004ECEEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,7 +144,9 @@
 			children = (
 				CA40B7DD2545BAAC004ECEEE /* BoolViewController.swift */,
 				CA95EDDF2545BC8700979F9D /* FloatViewController.swift */,
+				CA195D41254853620031144D /* TextViewController.swift */,
 				CA95EDE42545C00E00979F9D /* ArrayViewController.swift */,
+				CA195D46254858340031144D /* AdvTextViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -280,6 +286,8 @@
 				CA95EDE52545C00E00979F9D /* ArrayViewController.swift in Sources */,
 				CA40B7AB2545B73E004ECEEE /* AppDelegate.swift in Sources */,
 				CA40B7DE2545BAAC004ECEEE /* BoolViewController.swift in Sources */,
+				CA195D47254858340031144D /* AdvTextViewController.swift in Sources */,
+				CA195D42254853620031144D /* TextViewController.swift in Sources */,
 				CA40B7AD2545B73E004ECEEE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

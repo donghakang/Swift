@@ -14,7 +14,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // web list
     let webList = [
         "Bool",
-        "Float"
+        "Float",
+        "TextView",
+        "Long TextView"
     ]
     
     // table view
@@ -53,6 +55,10 @@ extension ViewController {
             performSegue(withIdentifier: "toFirst", sender: self)
         } else if indexPath.row == 1 {
             performSegue(withIdentifier: "toSecond", sender: self)
+        } else if indexPath.row == 2 {
+            performSegue(withIdentifier: "toThird", sender: self)
+        } else if indexPath.row == 3 {
+            performSegue(withIdentifier: "toFourth", sender: self)
         }
     }
 }
